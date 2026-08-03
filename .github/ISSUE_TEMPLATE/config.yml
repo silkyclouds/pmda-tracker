@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Discord
+    url: https://discord.gg/2jkwnNhHHR
+    about: Questions, setup help, and quick back-and-forth
+  - name: r/PMDA
+    url: https://reddit.com/r/PMDA
+    about: Longer write-ups and discussion

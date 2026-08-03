@@ -1,0 +1,29 @@
+name: Bug report
+description: Something in PMDA is broken or behaves wrongly
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got instead. Screenshots welcome.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: PMDA version
+      placeholder: "v290, or the image tag you pulled"
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup
+      description: How PMDA runs (Docker, Unraid, Compose), and how your library is stored — folder structure, tag quality, compilations.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Any relevant log output. Remove tokens, passwords and public addresses first.
+      render: text
