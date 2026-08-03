@@ -45,6 +45,13 @@ The safest way to try it is read-only first — no deletes or file moves are req
 - Subreddit — https://reddit.com/r/PMDA
 - Also available on Unraid Community Applications
 
+## Testing on Unraid — read this first
+
+Switching a container to the `:beta` tag does **not** always pull the new image: Unraid may reuse the cached one, and its update checker can say "up to date" while a newer beta exists (#40). Before every test:
+
+1. Edit the container, set the repository tag to `meaning/pmda:beta`, then use **Force Update** on the Docker page.
+2. Open the web UI and check the **bottom of the expanded sidebar**: it shows the version actually running (`pmda v30x`). Every test protocol on this tracker names the version it needs — if the sidebar shows an older one, the image did not update.
+
 ## Reporting something
 
 Open an issue here, or post on the Discord or the subreddit — reports from both are collected and filed here automatically, so nothing gets lost either way. If your report already exists, you will be pointed at the existing issue rather than getting a duplicate.
