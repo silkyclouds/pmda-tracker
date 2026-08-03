@@ -7,7 +7,7 @@ This repository holds **no source code** — only issues. The code lives in a pr
 <!-- dashboard:start -->
 ## Progress
 
-`████▓▓▓▓▓▓▓▓▓░░░░░░░` **18% confirmed fixed** · 67% fixed (incl. awaiting tester confirmation) · 39 reports total
+`████▓▓▓▓▓▓▓▓▓▓░░░░░░` **21% confirmed fixed** · 69% fixed (incl. awaiting tester confirmation) · 39 reports total
 
 A report counts as *resolved* only when the person who filed it confirms the fix — the dark
 segment is finished work, the shaded segment is fixes waiting on their reporter.
@@ -16,8 +16,7 @@ segment is finished work, the shaded segment is fixes waiting on their reporter.
 pie showData title All reports by status
     "Fixed, awaiting tester" : 19
     "Queued" : 12
-    "Resolved and confirmed" : 7
-    "Waiting on reporter" : 1
+    "Resolved and confirmed" : 8
 ```
 
 ```mermaid
@@ -25,18 +24,18 @@ pie showData title Open bugs by severity
     "major" : 11
     "minor" : 8
     "blocker" : 2
-    "unrated" : 2
     "cosmetic" : 2
+    "unrated" : 1
 ```
 
 ```mermaid
 pie showData title Open work by area
     "ui" : 10
     "deployment" : 5
-    "metadata" : 3
     "scan" : 3
     "settings" : 3
     "mobile" : 2
+    "metadata" : 2
     "providers" : 2
     "duplicates" : 2
     "sharing" : 1
