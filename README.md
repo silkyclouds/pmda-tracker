@@ -5,42 +5,20 @@ Public bug tracker and feature backlog for **PMDA**, a self-hosted tool for audi
 This repository holds **no source code** — only issues. The code lives in a private repository; access is granted individually. Everything else about the project happens here in the open: what is broken, what is planned, and where each report stands.
 
 <!-- dashboard:start -->
-## Progress
+## Where things stand
 
-`████▓▓▓▓▓▓▓▓▓▓▓░░░░░` **18% confirmed fixed** · 75% fixed (incl. awaiting tester confirmation) · 44 reports total
+A report is **resolved** only when the person who filed it confirms the fix — shipped
+code waits in orange until its reporter says so.
 
-A report counts as *resolved* only when the person who filed it confirms the fix — the dark
-segment is finished work, the shaded segment is fixes waiting on their reporter.
+<img src="charts/progress.svg" width="100%" alt="Progress"/>
 
-```mermaid
-pie showData title All reports by status
-    "Fixed, awaiting tester" : 25
-    "Queued" : 11
-    "Resolved and confirmed" : 8
-```
+<img src="charts/status.svg" width="100%" alt="All reports by status"/>
 
-```mermaid
-pie showData title Open bugs by severity
-    "major" : 12
-    "minor" : 9
-    "blocker" : 2
-    "cosmetic" : 2
-    "unrated" : 1
-```
+<img src="charts/severity.svg" width="100%" alt="Open bugs by severity"/>
 
-```mermaid
-pie showData title Open work by area
-    "ui" : 11
-    "deployment" : 7
-    "mobile" : 4
-    "scan" : 3
-    "settings" : 3
-    "metadata" : 2
-    "providers" : 2
-    "duplicates" : 2
-    "sharing" : 1
-    "other" : 1
-```
+<img src="charts/areas.svg" width="100%" alt="Open work by area"/>
+
+**Shortcuts** — [ready to test](https://github.com/silkyclouds/pmda-tracker/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-testing) · [not started](https://github.com/silkyclouds/pmda-tracker/issues?q=is%3Aissue+is%3Aopen+-label%3Aneeds-testing+-label%3Aneeds-info) · [confirmed fixed](https://github.com/silkyclouds/pmda-tracker/issues?q=is%3Aissue+is%3Aclosed)
 
 <!-- dashboard:end -->
 
