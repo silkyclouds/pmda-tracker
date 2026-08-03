@@ -4,6 +4,47 @@ Public bug tracker and feature backlog for **PMDA**, a self-hosted tool for audi
 
 This repository holds **no source code** — only issues. The code lives in a private repository; access is granted individually. Everything else about the project happens here in the open: what is broken, what is planned, and where each report stands.
 
+<!-- dashboard:start -->
+## Progress
+
+`████▓▓▓▓▓▓▓░░░░░░░░░` **19% confirmed fixed** · 56% fixed (incl. awaiting tester confirmation) · 36 reports total
+
+A report counts as *resolved* only when the person who filed it confirms the fix — the dark
+segment is finished work, the shaded segment is fixes waiting on their reporter.
+
+```mermaid
+pie showData title All reports by status
+    "Queued" : 15
+    "Fixed, awaiting tester" : 13
+    "Resolved and confirmed" : 7
+    "Waiting on reporter" : 1
+```
+
+```mermaid
+pie showData title Open bugs by severity
+    "major" : 10
+    "minor" : 7
+    "blocker" : 2
+    "unrated" : 2
+    "cosmetic" : 2
+```
+
+```mermaid
+pie showData title Open work by area
+    "ui" : 8
+    "deployment" : 4
+    "metadata" : 3
+    "scan" : 3
+    "settings" : 3
+    "mobile" : 2
+    "providers" : 2
+    "duplicates" : 2
+    "sharing" : 1
+    "other" : 1
+```
+
+<!-- dashboard:end -->
+
 ## What PMDA is
 
 PMDA is not a music player, and it is not meant to replace Plex, Plexamp, Navidrome, Jellyfin, beets, Picard, SongKong or Lidarr. The goal is more modest: help you inspect the library behind them.
