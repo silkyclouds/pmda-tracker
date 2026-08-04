@@ -8,7 +8,8 @@ This repository holds **no source code** — only issues. The code lives in a pr
 ## Where things stand
 
 A report is **resolved** only when the person who filed it confirms the fix — shipped
-code waits in orange until its reporter says so.
+code waits in orange until its reporter says so. These charts count reports only;
+improvements we opened ourselves are tallied separately so they cannot flatter the number.
 
 <img src="charts/progress.svg" width="100%" alt="Progress"/>
 
