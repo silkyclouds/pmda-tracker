@@ -83,3 +83,23 @@ scan page shows both and names the gap (raised in #79 follow-up).
 you or by the shadow re-certification pass. "632 groups awaiting review · 14
 verdicts" reads: 632 groups still need a decision, 14 decisions are already on
 file. A verdict never moves files by itself.
+
+## Enrichment
+
+**Album cover** — the artwork file. Fetched from providers when the folder has
+none. The "Covers" card counts albums that have one.
+
+**Album profile** — ONE dossier per album: the written review (its visible
+face on the album page), plus tags and similar-albums data. The "Album
+reviews" card counts albums whose profile carries a review — so "album
+reviews" and "album profiles" are the same pipeline seen from two ends
+(raised in #151).
+
+**Artist profile** — ONE dossier per artist: portrait, bio, similar artists.
+It feeds BOTH the "Artist images" and "Artist bios" cards, which is why the
+queue shows three lines under four coverage cards: one artist dossier serves
+two cards.
+
+**Backfill queue** — enrichment still owed, processed in the background when
+the system is idle. It never blocks scanning or browsing, and there is
+nothing to click: it drains by itself.
