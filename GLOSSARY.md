@@ -69,3 +69,17 @@ One logical scan can appear as several runs in history when it was interrupted
 and resumed; the resume continues the same underlying run and skips work
 already banked. Making history present that as one logical scan is tracked
 separately (#88).
+
+## Counters during a run
+
+**Advanced vs committed** — an album is *advanced* the moment a worker finishes
+a pass over it this run; it is *committed* once its result is written to the
+database and published. The gap between the two is work in flight. Advanced
+counts every pass — a resumed run re-advances albums it re-checks — so
+"advanced" can legitimately exceed the run's plan; committed never does. The
+scan page shows both and names the gap (raised in #79 follow-up).
+
+**Verdicts (fine-check)** — decisions already recorded on duplicate groups, by
+you or by the shadow re-certification pass. "632 groups awaiting review · 14
+verdicts" reads: 632 groups still need a decision, 14 decisions are already on
+file. A verdict never moves files by itself.
