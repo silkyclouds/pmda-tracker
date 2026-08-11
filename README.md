@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_148 fixed · 8 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_150 fixed · 6 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 27 report(s), 1 open</summary>
@@ -156,12 +156,12 @@ _148 fixed · 8 open — regenerated automatically. FIXED names the version that
 
 </details>
 
-<details open>
-<summary><b>Player & playback</b> — 1 report(s), 1 open</summary>
+<details>
+<summary><b>Player & playback</b> — 1 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#83](https://github.com/silkyclouds/pmda-tracker/issues/83) | Web player stays at 0:00 on some albums while the mobile app plays them | bitsofbitsofbits | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#83](https://github.com/silkyclouds/pmda-tracker/issues/83) | Web player stays at 0:00 on some albums while the mobile app plays them | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v401 | Shipped & closed — reopen welcome |
 
 </details>
 
@@ -229,12 +229,12 @@ _148 fixed · 8 open — regenerated automatically. FIXED names the version that
 </details>
 
 <details open>
-<summary><b>Other</b> — 35 report(s), 2 open</summary>
+<summary><b>Other</b> — 35 report(s), 1 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#155](https://github.com/silkyclouds/pmda-tracker/issues/155) | enhance the "composition" analysis | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#134](https://github.com/silkyclouds/pmda-tracker/issues/134) | Resume granularity is per-artist, so a 9,382-album Various Artists bucket restarts from zero … | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#155](https://github.com/silkyclouds/pmda-tracker/issues/155) | enhance the "composition" analysis | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v402 | Shipped & closed — reopen welcome |
 | [#153](https://github.com/silkyclouds/pmda-tracker/issues/153) | Manually starting background enrichment process from tools menu leads to API Error: 409 CONFLICT | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#152](https://github.com/silkyclouds/pmda-tracker/issues/152) | How to handle "incompletes" without a pmda handbook? | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v398 | Shipped & closed — reopen welcome |
 | [#151](https://github.com/silkyclouds/pmda-tracker/issues/151) | Enrichment vocabulary is undocumented | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
