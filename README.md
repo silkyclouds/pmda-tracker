@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_150 fixed · 6 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_151 fixed · 5 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 27 report(s), 1 open</summary>
@@ -44,7 +44,7 @@ _150 fixed · 6 open — regenerated automatically. FIXED names the version that
 | [#92](https://github.com/silkyclouds/pmda-tracker/issues/92) | Library export label is truncated, and its relationship to the Export stage is unclear | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v392 | Shipped & closed — reopen welcome |
 | [#89](https://github.com/silkyclouds/pmda-tracker/issues/89) | Nothing says which features stay inert until the first scan finalizes | edith1775 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#88](https://github.com/silkyclouds/pmda-tracker/issues/88) | Scan History: a resumed scan looks like a string of short failed runs | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v391 | Shipped & closed — reopen welcome |
-| [#84](https://github.com/silkyclouds/pmda-tracker/issues/84) | Heart and Like do the same thing: pick one, or make the rating model explicit | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v400 | Shipped & closed — reopen welcome |
+| [#84](https://github.com/silkyclouds/pmda-tracker/issues/84) | Heart and Like do the same thing: pick one, or make the rating model explicit | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.5 | Shipped & closed — reopen welcome |
 | [#79](https://github.com/silkyclouds/pmda-tracker/issues/79) | Scan vocabulary is undocumented: SKIPPED, FLAGGED, SOFT_MATCH, Files-safe, live index, backlog | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#77](https://github.com/silkyclouds/pmda-tracker/issues/77) | Artwork cache: missing .webp raises a traceback mid-scan | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v399 | Shipped & closed — reopen welcome |
 | [#48](https://github.com/silkyclouds/pmda-tracker/issues/48) | Search results: play a track directly from the results page | cissoubaka | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v398 | Shipped & closed — reopen welcome |
@@ -135,23 +135,23 @@ _150 fixed · 6 open — regenerated automatically. FIXED names the version that
 | [#142](https://github.com/silkyclouds/pmda-tracker/issues/142) | About 12,500 curator profile rows are empty placeholders that mask albums from missing-descri… | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v388 | Shipped & closed — reopen welcome |
 | [#141](https://github.com/silkyclouds/pmda-tracker/issues/141) | Curator ingestion stores full tracklists, sometimes with lyrics, as the album description | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v388 | Shipped & closed — reopen welcome |
 | [#138](https://github.com/silkyclouds/pmda-tracker/issues/138) | MusicBrainz provider shows error: release-group lookups 404 on the mirror for ids the public … | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v388 | Shipped & closed — reopen welcome |
-| [#101](https://github.com/silkyclouds/pmda-tracker/issues/101) | No way to match an album by hand when automatic matching fails | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v400 | Shipped & closed — reopen welcome |
+| [#101](https://github.com/silkyclouds/pmda-tracker/issues/101) | No way to match an album by hand when automatic matching fails | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v404 | Shipped & closed — reopen welcome |
 | [#99](https://github.com/silkyclouds/pmda-tracker/issues/99) | Track titles that start with a number lose it: "100 Bad Days" becomes "Bad Days" | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
-| [#90](https://github.com/silkyclouds/pmda-tracker/issues/90) | Albums silently un-match when MusicBrainz deletes the release they matched | iecj | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v400 | Shipped & closed — reopen welcome |
+| [#90](https://github.com/silkyclouds/pmda-tracker/issues/90) | Albums silently un-match when MusicBrainz deletes the release they matched | iecj | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v404 | Shipped & closed — reopen welcome |
 | [#26](https://github.com/silkyclouds/pmda-tracker/issues/26) | Matching fails on a large share of the library | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v302 | Shipped & closed — reopen welcome |
 | [#10](https://github.com/silkyclouds/pmda-tracker/issues/10) | Artist names containing '&' are split, and the albums land on the wrong artist | lewis91 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 
 </details>
 
-<details open>
-<summary><b>Mobile apps</b> — 5 report(s), 1 open</summary>
+<details>
+<summary><b>Mobile apps</b> — 5 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#36](https://github.com/silkyclouds/pmda-tracker/issues/36) | Android app: proper offline support (cached lists, offline filtering) | foggymtndrifter | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#94](https://github.com/silkyclouds/pmda-tracker/issues/94) | No documented route into the Android beta | foggymtndrifter | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#44](https://github.com/silkyclouds/pmda-tracker/issues/44) | Android app: Liked music list has no play or shuffle button | foggymtndrifter | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.4 | Shipped & closed — reopen welcome |
 | [#43](https://github.com/silkyclouds/pmda-tracker/issues/43) | Android app: no Download button on playlists | foggymtndrifter | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.4 | Shipped & closed — reopen welcome |
+| [#36](https://github.com/silkyclouds/pmda-tracker/issues/36) | Android app: proper offline support (cached lists, offline filtering) | foggymtndrifter | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.5 | Shipped & closed — reopen welcome |
 | [#35](https://github.com/silkyclouds/pmda-tracker/issues/35) | Mobile apps cannot log in when MFA is enabled | iecj | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.4 | Shipped & closed — reopen welcome |
 
 </details>
@@ -234,7 +234,7 @@ _150 fixed · 6 open — regenerated automatically. FIXED names the version that
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
 | [#134](https://github.com/silkyclouds/pmda-tracker/issues/134) | Resume granularity is per-artist, so a 9,382-album Various Artists bucket restarts from zero … | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#155](https://github.com/silkyclouds/pmda-tracker/issues/155) | enhance the "composition" analysis | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v402 | Shipped & closed — reopen welcome |
+| [#155](https://github.com/silkyclouds/pmda-tracker/issues/155) | enhance the "composition" analysis | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v404 | Shipped & closed — reopen welcome |
 | [#153](https://github.com/silkyclouds/pmda-tracker/issues/153) | Manually starting background enrichment process from tools menu leads to API Error: 409 CONFLICT | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#152](https://github.com/silkyclouds/pmda-tracker/issues/152) | How to handle "incompletes" without a pmda handbook? | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v398 | Shipped & closed — reopen welcome |
 | [#151](https://github.com/silkyclouds/pmda-tracker/issues/151) | Enrichment vocabulary is undocumented | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
