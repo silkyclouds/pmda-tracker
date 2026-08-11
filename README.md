@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_152 fixed · 4 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_153 fixed · 3 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 27 report(s), 1 open</summary>
@@ -177,14 +177,14 @@ _152 fixed · 4 open — regenerated automatically. FIXED names the version that
 
 </details>
 
-<details open>
-<summary><b>Settings & onboarding</b> — 11 report(s), 1 open</summary>
+<details>
+<summary><b>Settings & onboarding</b> — 11 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#91](https://github.com/silkyclouds/pmda-tracker/issues/91) | Database-only mode, with an opt-in write-through to files | iecj | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#102](https://github.com/silkyclouds/pmda-tracker/issues/102) | Setting up the AI integrations is enough friction that testers give up | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#100](https://github.com/silkyclouds/pmda-tracker/issues/100) | Reset PMDA returns a 400 and does nothing | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
+| [#91](https://github.com/silkyclouds/pmda-tracker/issues/91) | Database-only mode, with an opt-in write-through to files | iecj | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v408 | Shipped & closed — reopen welcome |
 | [#85](https://github.com/silkyclouds/pmda-tracker/issues/85) | No dry-run mode: nothing lets a user see what PMDA would do before it does it | arty_ai | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#80](https://github.com/silkyclouds/pmda-tracker/issues/80) | Web searches during scan are not disclosed or configurable | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v391 | Shipped & closed — reopen welcome |
 | [#74](https://github.com/silkyclouds/pmda-tracker/issues/74) | [scanner] Report which item the scan is on, not just how far along | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
