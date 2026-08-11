@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_151 fixed · 5 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_152 fixed · 4 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 27 report(s), 1 open</summary>
@@ -124,12 +124,11 @@ _151 fixed · 5 open — regenerated automatically. FIXED names the version that
 
 </details>
 
-<details open>
-<summary><b>Metadata & matching</b> — 11 report(s), 1 open</summary>
+<details>
+<summary><b>Metadata & matching</b> — 11 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#34](https://github.com/silkyclouds/pmda-tracker/issues/34) | Unmatchable folder names (abbreviated compilations): automatic AcoustID / OCR escalation | cissoubaka | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#144](https://github.com/silkyclouds/pmda-tracker/issues/144) | A persistent needs_ai_review quality flag on profiles, set at ingestion and queryable via MCP | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v388 | Shipped & closed — reopen welcome |
 | [#143](https://github.com/silkyclouds/pmda-tracker/issues/143) | Artist bios assigned to the wrong entity when scraping resolves a homonym | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v388 | Shipped & closed — reopen welcome |
 | [#142](https://github.com/silkyclouds/pmda-tracker/issues/142) | About 12,500 curator profile rows are empty placeholders that mask albums from missing-descri… | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v388 | Shipped & closed — reopen welcome |
@@ -138,6 +137,7 @@ _151 fixed · 5 open — regenerated automatically. FIXED names the version that
 | [#101](https://github.com/silkyclouds/pmda-tracker/issues/101) | No way to match an album by hand when automatic matching fails | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v404 | Shipped & closed — reopen welcome |
 | [#99](https://github.com/silkyclouds/pmda-tracker/issues/99) | Track titles that start with a number lose it: "100 Bad Days" becomes "Bad Days" | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#90](https://github.com/silkyclouds/pmda-tracker/issues/90) | Albums silently un-match when MusicBrainz deletes the release they matched | iecj | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v404 | Shipped & closed — reopen welcome |
+| [#34](https://github.com/silkyclouds/pmda-tracker/issues/34) | Unmatchable folder names (abbreviated compilations): automatic AcoustID / OCR escalation | cissoubaka | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v407 | Shipped & closed — reopen welcome |
 | [#26](https://github.com/silkyclouds/pmda-tracker/issues/26) | Matching fails on a large share of the library | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v302 | Shipped & closed — reopen welcome |
 | [#10](https://github.com/silkyclouds/pmda-tracker/issues/10) | Artist names containing '&' are split, and the albums land on the wrong artist | lewis91 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 
