@@ -23,6 +23,254 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 
 <!-- dashboard:end -->
 
+<!-- issue-table:start -->
+## Every report, one table per area
+
+_123 fixed · 30 open — regenerated automatically; 🟢 fixed (version that shipped it) · 🟠 fix in beta, awaiting its reporter · 🟣 waiting on details · ⚪ not started._
+
+<details open>
+<summary><b>🎨 UI / UX</b> — 25 report(s), 7 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#150](https://github.com/silkyclouds/pmda-tracker/issues/150) | Edition review modal: a single glued to its parent album offers only KEEP/DELETE — no way to … | Hodel1 | ⚪ Backlog | — |
+| [#148](https://github.com/silkyclouds/pmda-tracker/issues/148) | Broken-album review showed a 'Run AI shadow' button with no explanation (removed) | ovizii | ⚪ Backlog | — |
+| [#86](https://github.com/silkyclouds/pmda-tracker/issues/86) | Onboarding should scan first, then let the user choose the scope | arty_ai | ⚪ Backlog | — |
+| [#84](https://github.com/silkyclouds/pmda-tracker/issues/84) | Heart and Like do the same thing: pick one, or make the rating model explicit | bitsofbitsofbits | ⚪ Backlog | — |
+| [#77](https://github.com/silkyclouds/pmda-tracker/issues/77) | Artwork cache: missing .webp raises a traceback mid-scan | ovizii | ⚪ Backlog | — |
+| [#48](https://github.com/silkyclouds/pmda-tracker/issues/48) | Search results: play a track directly from the results page | cissoubaka | ⚪ Backlog | — |
+| [#45](https://github.com/silkyclouds/pmda-tracker/issues/45) | Statistics: library size on disk and total playtime (years/months/days/hours) | meaning_1 | ⚪ Backlog | — |
+| [#154](https://github.com/silkyclouds/pmda-tracker/issues/154) | Every duplicates number must name its scope (sidebar 0 vs fine-check 632 vs top bar 631) | ovizii | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#149](https://github.com/silkyclouds/pmda-tracker/issues/149) | Workers panel: provider states and icon grid need a legend, and busy/idle accounting disagree… | ovizii | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+| [#146](https://github.com/silkyclouds/pmda-tracker/issues/146) | Scan card step count grows mid-run: 'Step 4 of 4' becomes 'of 5' when enrichment starts | meaning_1 | 🟢 **Fixed** (v389) | Shipped & closed — reopen welcome |
+| [#92](https://github.com/silkyclouds/pmda-tracker/issues/92) | Library export label is truncated, and its relationship to the Export stage is unclear | ovizii | 🟢 **Fixed** (v392) | Shipped & closed — reopen welcome |
+| [#89](https://github.com/silkyclouds/pmda-tracker/issues/89) | Nothing says which features stay inert until the first scan finalizes | edith1775 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#88](https://github.com/silkyclouds/pmda-tracker/issues/88) | Scan History: a resumed scan looks like a string of short failed runs | ovizii | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+| [#79](https://github.com/silkyclouds/pmda-tracker/issues/79) | Scan vocabulary is undocumented: SKIPPED, FLAGGED, SOFT_MATCH, Files-safe, live index, backlog | ovizii | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#41](https://github.com/silkyclouds/pmda-tracker/issues/41) | No version number anywhere in the product — testers cannot tell which build they are on | cissoubaka, foggymtndrifter | 🟢 **Fixed** (v345) | Shipped & closed — reopen welcome |
+| [#39](https://github.com/silkyclouds/pmda-tracker/issues/39) | Concerts: process newly added artists/genres against providers immediately | meaning_1 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#37](https://github.com/silkyclouds/pmda-tracker/issues/37) | Liked page caps at 96 songs while all likes are stored | foggymtndrifter | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#29](https://github.com/silkyclouds/pmda-tracker/issues/29) | After an update the library reads 0 artists / 0 albums with no explanation | — | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#22](https://github.com/silkyclouds/pmda-tracker/issues/22) | PMDA advertises "no AI" but shows AI prompts and an AI health row | ovizii | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+| [#17](https://github.com/silkyclouds/pmda-tracker/issues/17) | Backend logs are unreadable in light mode | lewis91 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#16](https://github.com/silkyclouds/pmda-tracker/issues/16) | Not enough padding between the Library heading and THE COLLECTION line | lewis91 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#14](https://github.com/silkyclouds/pmda-tracker/issues/14) | A popup flashes on screen for a split second when PMDA loads | lewis91 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#13](https://github.com/silkyclouds/pmda-tracker/issues/13) | Player bar covers the bottom of Search results and Tools | lewis91 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#11](https://github.com/silkyclouds/pmda-tracker/issues/11) | Right half of the tile size slider on the Artists page does nothing | lewis91 | 🟢 **Fixed** (v345) | Shipped & closed — reopen welcome |
+| [#9](https://github.com/silkyclouds/pmda-tracker/issues/9) | Opening History before any scan has run shows a 404 page | lewis91 | 🟢 **Fixed** (v345) | Shipped & closed — reopen welcome |
+
+</details>
+
+<details open>
+<summary><b>📡 Scanner & pipeline</b> — 41 report(s), 2 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#145](https://github.com/silkyclouds/pmda-tracker/issues/145) | Finalize export pace is bounded by per-album bookkeeping, not I/O | meaning_1 | ⚪ Backlog | — |
+| [#97](https://github.com/silkyclouds/pmda-tracker/issues/97) | Full scan segfaults on a large library, four seconds into filesystem discovery | — | ⚪ Backlog | — |
+| [#137](https://github.com/silkyclouds/pmda-tracker/issues/137) | A scan in its preparation phases reports zero progress on every surface, and reads as hung | meaning_1 | 🟢 **Fixed** (v387) | Shipped & closed — reopen welcome |
+| [#136](https://github.com/silkyclouds/pmda-tracker/issues/136) | Startup resume has been silently dead: reconciliation clears the exact status the picker requ… | meaning_1 | 🟢 **Fixed** (v387) | Shipped & closed — reopen welcome |
+| [#105](https://github.com/silkyclouds/pmda-tracker/issues/105) | A full scan silently resumes a partial plan and reports it as the total | — | 🟢 **Fixed** (v333) | Shipped & closed — reopen welcome |
+| [#98](https://github.com/silkyclouds/pmda-tracker/issues/98) | SQLite 'database is locked' raises a traceback mid-scan instead of retrying | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#96](https://github.com/silkyclouds/pmda-tracker/issues/96) | Stale pipeline job is flagged but never cleared: library_index stuck for 8.8 hours | — | 🟢 **Fixed** (v339) | Shipped & closed — reopen welcome |
+| [#95](https://github.com/silkyclouds/pmda-tracker/issues/95) | Scan emits no heartbeat during filesystem discovery, so a healthy scan looks stalled | — | 🟢 **Fixed** (v335) | Shipped & closed — reopen welcome |
+| [#82](https://github.com/silkyclouds/pmda-tracker/issues/82) | [scanner] One pacer for MusicBrainz, not two | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#81](https://github.com/silkyclouds/pmda-tracker/issues/81) | [scanner] Only look up a table of contents when the folder came off a disc | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#78](https://github.com/silkyclouds/pmda-tracker/issues/78) | Incomplete albums: the scan count and the review queue disagree | ovizii | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+| [#76](https://github.com/silkyclouds/pmda-tracker/issues/76) | [scanner] Wire every improvement into the live pipeline | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#75](https://github.com/silkyclouds/pmda-tracker/issues/75) | [scanner] Install the MusicBrainz call discipline on every call site | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#73](https://github.com/silkyclouds/pmda-tracker/issues/73) | [scanner] Key classical identity on the performance, not the work | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#72](https://github.com/silkyclouds/pmda-tracker/issues/72) | [scanner] Batch the Postgres writes instead of one round trip per row | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#71](https://github.com/silkyclouds/pmda-tracker/issues/71) | [scanner] Narrow the provider query rather than widening the results | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#69](https://github.com/silkyclouds/pmda-tracker/issues/69) | [scanner] Wire AcoustID escalation into the scan pipeline | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#68](https://github.com/silkyclouds/pmda-tracker/issues/68) | [scanner] Optimal track alignment instead of greedy pairing | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#67](https://github.com/silkyclouds/pmda-tracker/issues/67) | [scanner] Various Artists inferred at a dominance threshold | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#66](https://github.com/silkyclouds/pmda-tracker/issues/66) | [scanner] Album identity derived from content, not from the path | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#65](https://github.com/silkyclouds/pmda-tracker/issues/65) | [scanner] Per-folder manifest hash for incremental scans | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#64](https://github.com/silkyclouds/pmda-tracker/issues/64) | [scanner] Tag-based grouping cross-checked against folder grouping | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#63](https://github.com/silkyclouds/pmda-tracker/issues/63) | [scanner] Album-aware keeper cascade for duplicates | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#62](https://github.com/silkyclouds/pmda-tracker/issues/62) | [scanner] Call discipline for the public MusicBrainz web service | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#61](https://github.com/silkyclouds/pmda-tracker/issues/61) | [scanner] Fuzzy MusicBrainz TOC lookup identifies the exact release | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#60](https://github.com/silkyclouds/pmda-tracker/issues/60) | [scanner] AcoustID escalation with album-level consensus | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#59](https://github.com/silkyclouds/pmda-tracker/issues/59) | [scanner] Rip evidence from cue sheets and EAC/XLD logs | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#58](https://github.com/silkyclouds/pmda-tracker/issues/58) | [scanner] Three provider outcomes, circuit breaker and token bucket | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#57](https://github.com/silkyclouds/pmda-tracker/issues/57) | [scanner] Match distance with per-penalty veto and runner-up margin | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#56](https://github.com/silkyclouds/pmda-tracker/issues/56) | [scanner] Audio identity: stream hash and duration vector | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#55](https://github.com/silkyclouds/pmda-tracker/issues/55) | [scanner] Classical completeness judged by work structure, not file count | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#54](https://github.com/silkyclouds/pmda-tracker/issues/54) | [scanner] Detect albums truncated at the tail | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#52](https://github.com/silkyclouds/pmda-tracker/issues/52) | [scanner] Scan worker width raised to match provider-first | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#51](https://github.com/silkyclouds/pmda-tracker/issues/51) | [scanner] MusicBrainz quarantine per release group | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#50](https://github.com/silkyclouds/pmda-tracker/issues/50) | [scanner] Watchdog for zombie scan jobs | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#49](https://github.com/silkyclouds/pmda-tracker/issues/49) | [scanner] Post-scan export no longer re-runs discovery | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#47](https://github.com/silkyclouds/pmda-tracker/issues/47) | Scan roots: three competing sources of truth, and Settings changes can be silently ignored | — | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+| [#32](https://github.com/silkyclouds/pmda-tracker/issues/32) | Identify with providers first, MusicBrainz asynchronously after | — | 🟢 **Fixed** (v301) | Shipped & closed — reopen welcome |
+| [#7](https://github.com/silkyclouds/pmda-tracker/issues/7) | Scanning is extremely slow — over a week for 100k tracks | lewis91 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#6](https://github.com/silkyclouds/pmda-tracker/issues/6) | FutureTimeout - Export failed | Hodel1 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#1](https://github.com/silkyclouds/pmda-tracker/issues/1) | Stuck with error on first album | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+
+</details>
+
+<details>
+<summary><b>👯 Duplicates</b> — 4 report(s), 0 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#104](https://github.com/silkyclouds/pmda-tracker/issues/104) | Duplicate keeper drops the copy that has cover art | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#103](https://github.com/silkyclouds/pmda-tracker/issues/103) | Export arbitration quarantines a split album's tail as a duplicate loser | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#15](https://github.com/silkyclouds/pmda-tracker/issues/15) | Duplicate detection calls different editions an exact duplicate | lewis91 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#12](https://github.com/silkyclouds/pmda-tracker/issues/12) | Sidebar reports duplicates found, but the Duplicates page is empty | edith1775, lewis91 | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+
+</details>
+
+<details open>
+<summary><b>🏷️ Metadata & matching</b> — 11 report(s), 3 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#101](https://github.com/silkyclouds/pmda-tracker/issues/101) | No way to match an album by hand when automatic matching fails | bitsofbitsofbits | ⚪ Backlog | — |
+| [#90](https://github.com/silkyclouds/pmda-tracker/issues/90) | Albums silently un-match when MusicBrainz deletes the release they matched | iecj | ⚪ Backlog | — |
+| [#34](https://github.com/silkyclouds/pmda-tracker/issues/34) | Unmatchable folder names (abbreviated compilations): automatic AcoustID / OCR escalation | cissoubaka | ⚪ Backlog | — |
+| [#144](https://github.com/silkyclouds/pmda-tracker/issues/144) | A persistent needs_ai_review quality flag on profiles, set at ingestion and queryable via MCP | meaning_1 | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#143](https://github.com/silkyclouds/pmda-tracker/issues/143) | Artist bios assigned to the wrong entity when scraping resolves a homonym | meaning_1 | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#142](https://github.com/silkyclouds/pmda-tracker/issues/142) | About 12,500 curator profile rows are empty placeholders that mask albums from missing-descri… | meaning_1 | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#141](https://github.com/silkyclouds/pmda-tracker/issues/141) | Curator ingestion stores full tracklists, sometimes with lyrics, as the album description | meaning_1 | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#138](https://github.com/silkyclouds/pmda-tracker/issues/138) | MusicBrainz provider shows error: release-group lookups 404 on the mirror for ids the public … | meaning_1 | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#99](https://github.com/silkyclouds/pmda-tracker/issues/99) | Track titles that start with a number lose it: "100 Bad Days" becomes "Bad Days" | bitsofbitsofbits | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#26](https://github.com/silkyclouds/pmda-tracker/issues/26) | Matching fails on a large share of the library | bitsofbitsofbits | 🟢 **Fixed** (v302) | Shipped & closed — reopen welcome |
+| [#10](https://github.com/silkyclouds/pmda-tracker/issues/10) | Artist names containing '&' are split, and the albums land on the wrong artist | lewis91 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+
+</details>
+
+<details open>
+<summary><b>📱 Mobile apps</b> — 5 report(s), 1 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#36](https://github.com/silkyclouds/pmda-tracker/issues/36) | Android app: proper offline support (cached lists, offline filtering) | foggymtndrifter | ⚪ Backlog | — |
+| [#94](https://github.com/silkyclouds/pmda-tracker/issues/94) | No documented route into the Android beta | foggymtndrifter | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#44](https://github.com/silkyclouds/pmda-tracker/issues/44) | Android app: Liked music list has no play or shuffle button | foggymtndrifter | 🟢 **Fixed** (1.0.4) | Shipped & closed — reopen welcome |
+| [#43](https://github.com/silkyclouds/pmda-tracker/issues/43) | Android app: no Download button on playlists | foggymtndrifter | 🟢 **Fixed** (1.0.4) | Shipped & closed — reopen welcome |
+| [#35](https://github.com/silkyclouds/pmda-tracker/issues/35) | Mobile apps cannot log in when MFA is enabled | iecj | 🟢 **Fixed** (1.0.4) | Shipped & closed — reopen welcome |
+
+</details>
+
+<details open>
+<summary><b>▶️ Player & playback</b> — 1 report(s), 1 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#83](https://github.com/silkyclouds/pmda-tracker/issues/83) | Web player stays at 0:00 on some albums while the mobile app plays them | bitsofbitsofbits | ⚪ Backlog | — |
+
+</details>
+
+<details>
+<summary><b>🔌 Providers & integrations</b> — 4 report(s), 0 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#140](https://github.com/silkyclouds/pmda-tracker/issues/140) | Last.fm bios keep the Creative Commons boilerplate and arrive unformatted | meaning_1 | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#139](https://github.com/silkyclouds/pmda-tracker/issues/139) | Discogs pressing notes are stored as the album review | meaning_1 | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#19](https://github.com/silkyclouds/pmda-tracker/issues/19) | Incompletes page says acquisition is disabled although Lidarr is configured and on | foggymtndrifter | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#18](https://github.com/silkyclouds/pmda-tracker/issues/18) | Spotify setup shows a redirect URI that PMDA never actually sends | bitsofbitsofbits, foggymtndrifter | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+
+</details>
+
+<details open>
+<summary><b>⚙️ Settings & onboarding</b> — 11 report(s), 3 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#91](https://github.com/silkyclouds/pmda-tracker/issues/91) | Database-only mode, with an opt-in write-through to files | iecj | ⚪ Backlog | — |
+| [#85](https://github.com/silkyclouds/pmda-tracker/issues/85) | No dry-run mode: nothing lets a user see what PMDA would do before it does it | arty_ai | ⚪ Backlog | — |
+| [#46](https://github.com/silkyclouds/pmda-tracker/issues/46) | MCP: like artists, genres and labels through the PMDA MCP server | meaning_1 | ⚪ Backlog | — |
+| [#102](https://github.com/silkyclouds/pmda-tracker/issues/102) | Setting up the AI integrations is enough friction that testers give up | bitsofbitsofbits | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#100](https://github.com/silkyclouds/pmda-tracker/issues/100) | Reset PMDA returns a 400 and does nothing | bitsofbitsofbits | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#80](https://github.com/silkyclouds/pmda-tracker/issues/80) | Web searches during scan are not disclosed or configurable | ovizii | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+| [#74](https://github.com/silkyclouds/pmda-tracker/issues/74) | [scanner] Report which item the scan is on, not just how far along | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#53](https://github.com/silkyclouds/pmda-tracker/issues/53) | [scanner] Self-hosted error telemetry, strictly opt-in | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#25](https://github.com/silkyclouds/pmda-tracker/issues/25) | Worker count and batch size display 0 while a manual override is still active | ovizii | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#20](https://github.com/silkyclouds/pmda-tracker/issues/20) | Spotify Client ID has to be set as a Docker variable, but the docs point at the UI | bitsofbitsofbits, foggymtndrifter | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#8](https://github.com/silkyclouds/pmda-tracker/issues/8) | Onboarding asks only for the Last.fm API key, settings also asks for the secret | lewis91 | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+
+</details>
+
+<details open>
+<summary><b>📦 Deployment & docs</b> — 16 report(s), 3 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#87](https://github.com/silkyclouds/pmda-tracker/issues/87) | Cache layers are undocumented: which paths want NVMe, and how much each will consume | ovizii | ⚪ Backlog | — |
+| [#33](https://github.com/silkyclouds/pmda-tracker/issues/33) | Legacy cleanup campaign: dead modes, dead vars, dead log lines, monolith factoring, security … | — | ⚪ Backlog | — |
+| [#23](https://github.com/silkyclouds/pmda-tracker/issues/23) | Repeated PostgreSQL error: relation "files_albums" does not exist | ovizii | ⚪ Backlog | — |
+| [#93](https://github.com/silkyclouds/pmda-tracker/issues/93) | Document whether PMDA and Jellyfin can share one music library | bitsofbitsofbits | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#70](https://github.com/silkyclouds/pmda-tracker/issues/70) | [scanner] Test container disk leak filled the Docker pool | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#42](https://github.com/silkyclouds/pmda-tracker/issues/42) | Beta instructions point testers at :latest, but the fixes ship on :beta | foggymtndrifter | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#40](https://github.com/silkyclouds/pmda-tracker/issues/40) | Unraid reuses the cached image when switching to :beta — testers test the old build believing… | foggymtndrifter | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#38](https://github.com/silkyclouds/pmda-tracker/issues/38) | OOM crashes during first big scan (4G container limit) | ovizii | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#28](https://github.com/silkyclouds/pmda-tracker/issues/28) | Lost web UI access after updating | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#27](https://github.com/silkyclouds/pmda-tracker/issues/27) | Ollama is not detected when it runs in the same Docker stack | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#24](https://github.com/silkyclouds/pmda-tracker/issues/24) | Container CPU limit ignored — PMDA sizes itself from the host's CPU count | ovizii | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#21](https://github.com/silkyclouds/pmda-tracker/issues/21) | Bootstrap is refused over Tailscale — 100.x addresses are treated as public | ovizii | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#5](https://github.com/silkyclouds/pmda-tracker/issues/5) | UnRAID 7.1.2 inability to create PMDA docker container from default settings related to confi… | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#4](https://github.com/silkyclouds/pmda-tracker/issues/4) | KeyError 'Missing required configuration key' | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#3](https://github.com/silkyclouds/pmda-tracker/issues/3) | The Discord invitation links are invalid | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#2](https://github.com/silkyclouds/pmda-tracker/issues/2) | 'pull access denied for silkyclouds/pmda' through compose | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+
+</details>
+
+<details>
+<summary><b>🔗 Sharing & social</b> — 1 report(s), 0 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#31](https://github.com/silkyclouds/pmda-tracker/issues/31) | Device-link check crashes: 'sqlite3.Row' object has no attribute 'get' | cissoubaka | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+
+</details>
+
+<details open>
+<summary><b>🗂️ Other</b> — 34 report(s), 10 open</summary>
+
+| # | Issue | Reporter | Status | Validation |
+|---|-------|----------|--------|------------|
+| [#152](https://github.com/silkyclouds/pmda-tracker/issues/152) | How to handle "incompletes" without a pmda handbook? | — | ⚪ Backlog | — |
+| [#134](https://github.com/silkyclouds/pmda-tracker/issues/134) | Resume granularity is per-artist, so a 9,382-album Various Artists bucket restarts from zero … | — | ⚪ Backlog | — |
+| [#133](https://github.com/silkyclouds/pmda-tracker/issues/133) | Segfault located: a werkzeug request thread dies in the auth guard, and runtime binding has n… | — | ⚪ Backlog | — |
+| [#131](https://github.com/silkyclouds/pmda-tracker/issues/131) | Export moved the entire intake root (3.8 TB) into Music_matched as a single album on tag-trus… | — | ⚪ Backlog | — |
+| [#130](https://github.com/silkyclouds/pmda-tracker/issues/130) | Three runs claim status running at once, and resume ranks candidates by plan size instead of … | — | ⚪ Backlog | — |
+| [#129](https://github.com/silkyclouds/pmda-tracker/issues/129) | Consider a review-gated tool to contribute releases PMDA finds elsewhere back to MusicBrainz | — | ⚪ Backlog | — |
+| [#127](https://github.com/silkyclouds/pmda-tracker/issues/127) | Run duplicate detection after the MBID backfill, not during the scan | — | ⚪ Backlog | — |
+| [#120](https://github.com/silkyclouds/pmda-tracker/issues/120) | Public share pages use a reduced player with no PMDA branding | — | ⚪ Backlog | — |
+| [#114](https://github.com/silkyclouds/pmda-tracker/issues/114) | Album progress commits only when an artist completes, so an interrupted scan loses the entire… | — | ⚪ Backlog | — |
+| [#110](https://github.com/silkyclouds/pmda-tracker/issues/110) | Duplicate engine evicts a library album on a generic title alone, bypassing the relationship … | — | ⚪ Backlog | — |
+| [#153](https://github.com/silkyclouds/pmda-tracker/issues/153) | Manually starting background enrichment process from tools menu leads to API Error: 409 CONFLICT | — | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#151](https://github.com/silkyclouds/pmda-tracker/issues/151) | Enrichment vocabulary is undocumented | — | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#135](https://github.com/silkyclouds/pmda-tracker/issues/135) | MusicBrainz local still reports timeouts while the mirror answers the same query in 30 ms | — | 🟢 **Fixed** (v387) | Shipped & closed — reopen welcome |
+| [#132](https://github.com/silkyclouds/pmda-tracker/issues/132) | A resumed scan restores its plan, reports the plan size as albums scanned, and identifies zer… | — | 🟢 **Fixed** (v366) | Shipped & closed — reopen welcome |
+| [#128](https://github.com/silkyclouds/pmda-tracker/issues/128) | The loose MusicBrainz search sends fielded syntax to dismax, which cannot parse it: 3 of 40 a… | — | 🟢 **Fixed** (v387) | Shipped & closed — reopen welcome |
+| [#126](https://github.com/silkyclouds/pmda-tracker/issues/126) | Workers panel: show which providers answered for each in-flight album, as a grid | — | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+| [#125](https://github.com/silkyclouds/pmda-tracker/issues/125) | The MusicBrainz row measures different things from the other providers under the same column … | — | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#124](https://github.com/silkyclouds/pmda-tracker/issues/124) | 98% of the MusicBrainz lookup cache is negative, written while MB was deferred or throttled, … | — | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#123](https://github.com/silkyclouds/pmda-tracker/issues/123) | Stopping during the walk loses all folder-probing progress, and the API still reports resume_… | — | 🟢 **Fixed** (v355) | Shipped & closed — reopen welcome |
+| [#122](https://github.com/silkyclouds/pmda-tracker/issues/122) | Local MusicBrainz mirror is still paced at the public API's 1 req/s: 25 timeouts against 20 m… | — | 🟢 **Fixed** (v387) | Shipped & closed — reopen welcome |
+| [#121](https://github.com/silkyclouds/pmda-tracker/issues/121) | No hard rescan: a bad match can be cached in a way nothing in the UI can clear | — | 🟢 **Fixed** (v389) | Shipped & closed — reopen welcome |
+| [#119](https://github.com/silkyclouds/pmda-tracker/issues/119) | Request-available notifications are not clickable and do not open the album | — | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+| [#118](https://github.com/silkyclouds/pmda-tracker/issues/118) | Check the MusicBrainz mirror's replication lag before a scan starts matching | — | 🟢 **Fixed** (v353) | Shipped & closed — reopen welcome |
+| [#117](https://github.com/silkyclouds/pmda-tracker/issues/117) | Stop snapshot can overwrite every artist name in the resume plan with "Unknown", collapsing t… | — | 🟢 **Fixed** (v352) | Shipped & closed — reopen welcome |
+| [#116](https://github.com/silkyclouds/pmda-tracker/issues/116) | Stopping a scan waits for the current artist to finish — three days on a 9,819-album compilat… | — | 🟢 **Fixed** (v367) | Shipped & closed — reopen welcome |
+| [#115](https://github.com/silkyclouds/pmda-tracker/issues/115) | Profile backfill dies on a 64 MB /dev/shm and reports it as "No space left on device" | — | 🟢 **Fixed** (v387) | Shipped & closed — reopen welcome |
+| [#113](https://github.com/silkyclouds/pmda-tracker/issues/113) | Scan parallelism is keyed on artist, so a compilation-heavy intake runs 76% of the plan on a … | — | 🟢 **Fixed** (v352) | Shipped & closed — reopen welcome |
+| [#112](https://github.com/silkyclouds/pmda-tracker/issues/112) | Scan progress overstates itself when one artist dominates the plan: 12,792 of 12,950 shown ag… | — | 🟢 **Fixed** (v352) | Shipped & closed — reopen welcome |
+| [#111](https://github.com/silkyclouds/pmda-tracker/issues/111) | Three duplicate counts on screen at once, none of them labelled | — | 🟢 **Fixed** (v391) | Shipped & closed — reopen welcome |
+| [#109](https://github.com/silkyclouds/pmda-tracker/issues/109) | Artist MusicBrainz IDs are almost never stored (666 of 115,793) | — | 🟢 **Fixed** (v388) | Shipped & closed — reopen welcome |
+| [#108](https://github.com/silkyclouds/pmda-tracker/issues/108) | TheAudioDB is queried by name when the MusicBrainz ID is already known | — | 🟢 **Fixed** | Shipped & closed — reopen welcome |
+| [#107](https://github.com/silkyclouds/pmda-tracker/issues/107) | Worker activity is never published, so a stuck worker is invisible | — | 🟢 **Fixed** (v335) | Shipped & closed — reopen welcome |
+| [#106](https://github.com/silkyclouds/pmda-tracker/issues/106) | Discovery emits no durable heartbeat: the scan job goes stale while the scan is healthy | — | 🟢 **Fixed** (v335) | Shipped & closed — reopen welcome |
+| [#30](https://github.com/silkyclouds/pmda-tracker/issues/30) | [BUG] numpy error | cissoubaka | 🟢 **Fixed** (v396) | Shipped & closed — reopen welcome |
+
+</details>
+
+<!-- issue-table:end -->
+
 ## What PMDA is
 
 PMDA is not a music player, and it is not meant to replace Plex, Plexamp, Navidrome, Jellyfin, beets, Picard, SongKong or Lidarr. The goal is more modest: help you inspect the library behind them.
