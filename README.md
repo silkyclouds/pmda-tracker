@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_160 fixed · 22 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_161 fixed · 21 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 34 report(s), 5 open</summary>
@@ -70,12 +70,12 @@ _160 fixed · 22 open — regenerated automatically. FIXED names the version tha
 
 </details>
 
-<details open>
-<summary><b>Scanner & pipeline</b> — 43 report(s), 1 open</summary>
+<details>
+<summary><b>Scanner & pipeline</b> — 43 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#181](https://github.com/silkyclouds/pmda-tracker/issues/181) | A scan's tuple can be written into broken_albums with its columns shifted | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#181](https://github.com/silkyclouds/pmda-tracker/issues/181) | A scan's tuple can be written into broken_albums with its columns shifted | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#175](https://github.com/silkyclouds/pmda-tracker/issues/175) | Library index rebuild restarts from zero on every interruption, and re-reads folders that nev… | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#145](https://github.com/silkyclouds/pmda-tracker/issues/145) | Finalize export pace is bounded by per-album bookkeeping, not I/O | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v401 | Shipped & closed — reopen welcome |
 | [#137](https://github.com/silkyclouds/pmda-tracker/issues/137) | A scan in its preparation phases reports zero progress on every surface, and reads as hung | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v387 | Shipped & closed — reopen welcome |
