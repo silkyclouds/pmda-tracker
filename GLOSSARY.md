@@ -170,3 +170,17 @@ two cards.
 **Backfill queue** — enrichment still owed, processed in the background when
 the system is idle. It never blocks scanning or browsing, and there is
 nothing to click: it drains by itself.
+
+## MusicBrainz mirror
+
+PMDA works best against a local MusicBrainz mirror: unlimited lookups, no
+1-request-per-second ceiling, and scans that do not stall on the public API.
+
+- Easiest path: the musicbrainz-docker project (https://github.com/metabrainz/musicbrainz-docker)
+  runs the full database plus search server with replication. Allow roughly
+  100 GB of disk and a few hours for the initial import.
+- Point PMDA at it in Setup, System: set the mirror URL (for example
+  http://your-server:5000) and give it a name. PMDA falls back to the public
+  API automatically when the mirror is unreachable.
+- No mirror is required: without one, PMDA simply respects the public API's
+  rate limit, so large scans identify more slowly.
