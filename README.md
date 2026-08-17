@@ -26,18 +26,18 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_161 fixed · 21 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_163 fixed · 21 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
-<summary><b>UI / UX</b> — 34 report(s), 5 open</summary>
+<summary><b>UI / UX</b> — 34 report(s), 4 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
 | [#180](https://github.com/silkyclouds/pmda-tracker/issues/180) | Incompletes page reports zero flagged albums: one binary cell makes the whole response unseri… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v429 | Awaiting reporter confirmation |
-| [#165](https://github.com/silkyclouds/pmda-tracker/issues/165) | Library header counts disagree with Statistics, and the size on disk looks wrong | meaning_1 | <img src="charts/badges/badge-info.svg" alt="NEEDS INFO" height="18"/> | — | Waiting on details |
 | [#162](https://github.com/silkyclouds/pmda-tracker/issues/162) | The Users page belongs under Settings | meaning_1 | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v420 | Awaiting reporter confirmation |
 | [#160](https://github.com/silkyclouds/pmda-tracker/issues/160) | Your circle and Users and shares overlap: keep one listening-activity page | meaning_1 | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v420 | Awaiting reporter confirmation |
 | [#86](https://github.com/silkyclouds/pmda-tracker/issues/86) | Onboarding should scan first, then let the user choose the scope | arty_ai | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#165](https://github.com/silkyclouds/pmda-tracker/issues/165) | Library header counts disagree with Statistics, and the size on disk looks wrong | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v416 | Shipped & closed — reopen welcome |
 | [#164](https://github.com/silkyclouds/pmda-tracker/issues/164) | The startup splash quote is not italic like every other standfirst | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
 | [#161](https://github.com/silkyclouds/pmda-tracker/issues/161) | Tools page is mostly redundant with pages that already exist | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
 | [#158](https://github.com/silkyclouds/pmda-tracker/issues/158) | Requests page: albums already in the library are not clickable | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
@@ -246,7 +246,7 @@ _161 fixed · 21 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 44 report(s), 10 open</summary>
+<summary><b>Other</b> — 45 report(s), 10 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
@@ -260,6 +260,7 @@ _161 fixed · 21 open — regenerated automatically. FIXED names the version tha
 | [#168](https://github.com/silkyclouds/pmda-tracker/issues/168) | "Why flagged" shows one reason while the row shows another | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v421 | Awaiting reporter confirmation |
 | [#167](https://github.com/silkyclouds/pmda-tracker/issues/167) | A review row links to an album page that answers "no longer in your library" | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
 | [#134](https://github.com/silkyclouds/pmda-tracker/issues/134) | Resume granularity is per-artist, so a 9,382-album Various Artists bucket restarts from zero … | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#185](https://github.com/silkyclouds/pmda-tracker/issues/185) | Pages are computed in the background and served instantly from cache | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v473 | Shipped & closed — reopen welcome |
 | [#155](https://github.com/silkyclouds/pmda-tracker/issues/155) | enhance the "composition" analysis | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
 | [#153](https://github.com/silkyclouds/pmda-tracker/issues/153) | Manually starting background enrichment process from tools menu leads to API Error: 409 CONFLICT | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#152](https://github.com/silkyclouds/pmda-tracker/issues/152) | How to handle "incompletes" without a pmda handbook? | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v410 | Shipped & closed — reopen welcome |
