@@ -116,11 +116,22 @@ def bundle_digest(bundle: dict) -> str:
     inc = bundle.get("incompletes")
     inc_count = len(inc) if isinstance(inc, list) else "n/a"
     top = ", ".join(f"{k}: {v}" for k, v in sorted(cls.items(), key=lambda x: -int(x[1] or 0))[:5])
-    return (
+    lines = [
         f"PMDA version: `{bundle.get('pmda_version') or 'unknown'}` | pairs analyzed: {total} | "
-        f"actionable: {actionable} | incompletes rows: {inc_count}\n"
-        f"Top classes: {top or 'none'}"
-    )
+        f"actionable: {actionable} | incompletes rows: {inc_count}",
+        f"Top classes: {top or 'none'}",
+    ]
+    scan = bundle.get("scan") or {}
+    if isinstance(scan, dict) and scan.get("match_breakdown"):
+        mb = scan["match_breakdown"]
+        toggles = scan.get("toggles") or {}
+        off = ", ".join(k for k, v in sorted(toggles.items()) if v is False) or "none"
+        lines.append(
+            f"Scan: mode `{scan.get('workflow_mode') or 'unknown'}` | albums {mb.get('albums_total')} | "
+            f"with MB group id {mb.get('with_musicbrainz_group_id')} | edition-verified {mb.get('edition_verified')} | "
+            f"any provider source {mb.get('with_any_provider_source')} | toggles OFF: {off}"
+        )
+    return "\n".join(lines)
 
 
 def counter_block(count: int, versions: list[str]) -> str:
