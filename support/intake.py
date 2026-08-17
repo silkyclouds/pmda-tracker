@@ -41,6 +41,7 @@ TYPES = {
     "dupe-missed": "Duplicates users expected but PMDA did not report",
     "incompletes-report": "Incompletes detection reports",
     "mirror-install": "MusicBrainz mirror setup failures",
+    "library-empty": "Scanned but the library/export stayed empty",
     "general-report": "General user reports (unclassified)",
 }
 
@@ -91,6 +92,8 @@ def classify(text: str, bundle: dict | None) -> str:
     if bundle is None:
         if re.search(r"mirror|musicbrainz[- ]docker|replication", t):
             return "mirror-install"
+        if re.search(r"(library|export|librairie).{0,40}(empty|vide|nothing|rien|only \d|que \d)|nothing (was )?(moved|exported|filed)", t):
+            return "library-empty"
         if re.search(r"incomplete|missing track", t):
             return "incompletes-report"
         if re.search(r"dup|copy|copies", t):
