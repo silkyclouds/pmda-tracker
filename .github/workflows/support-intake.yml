@@ -1,0 +1,39 @@
+name: support-intake
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+  contents: write
+
+jobs:
+  intake:
+    # Run for every scheduled/manual trigger, and for comment events only when
+    # the comment landed on the drop issue.
+    if: github.event_name != 'issue_comment' || github.event.issue.number == 187
+    runs-on: ubuntu-latest
+    concurrency:
+      group: support-intake
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Run intake
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUPPORT_DROP_ISSUE: "187"
+        run: python3 support/intake.py
+      - name: Persist state
+        run: |
+          git config user.name "pmda-support-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add support/state.json
+          git diff --cached --quiet || git commit -m "support-intake: advance cursor"
+          git pull --rebase origin main
+          git push origin main
