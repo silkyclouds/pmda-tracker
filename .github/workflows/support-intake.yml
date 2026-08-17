@@ -27,6 +27,7 @@ jobs:
       - name: Run intake
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           SUPPORT_DROP_ISSUE: "187"
         run: python3 support/intake.py
       - name: Persist state

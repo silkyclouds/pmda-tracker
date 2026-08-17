@@ -183,6 +183,142 @@ def update_counter(issue_number: int, version: str) -> None:
     _api(f"/repos/{REPO}/issues/{issue_number}", method="PATCH", body={"body": body})
 
 
+
+# ── Discord door ─────────────────────────────────────────────────────────────
+# Same pipeline, second entrance: users report in the Discord #support /
+# #beta-testers channels. When DISCORD_BOT_TOKEN is present (repo Actions
+# secret), this poll reads new channel messages, keeps the ones that look
+# like reports, commits any bundle into support/bundles/ (Discord attachment
+# links expire; a committed file is durable), posts the report on the drop
+# issue -- where the classification above picks it up on the same run's next
+# poll -- and acknowledges in the channel.
+
+DISCORD_API = "https://discord.com/api/v10"
+DISCORD_CHANNELS = ("support", "beta-testers")
+DISCORD_REPORT_SIGNAL = re.compile(
+    r"\b(bug|broken|crash|error|fail|wrong|incorrect|missing|dup(e|licate)s?|incomplete|"
+    r"empty|nothing|zero|404|mirror|match|scan(ned)?|librair|library)\b",
+    re.I,
+)
+
+
+def _discord(path: str, method: str = "GET", body: dict | None = None):
+    token = os.getenv("DISCORD_BOT_TOKEN", "")
+    req = urllib.request.Request(
+        DISCORD_API + path,
+        method=method,
+        headers={
+            "Authorization": f"Bot {token}",
+            "User-Agent": "pmda-support-intake",
+            "Content-Type": "application/json",
+        },
+        data=json.dumps(body).encode() if body is not None else None,
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode() or "null")
+
+
+def _commit_bundle(msg_id: str, data: bytes) -> str:
+    import base64 as _b64
+
+    path = f"support/bundles/{msg_id}.json"
+    _api(
+        f"/repos/{REPO}/contents/{path}",
+        method="PUT",
+        body={
+            "message": f"support bundle from Discord message {msg_id}",
+            "content": _b64.b64encode(data).decode(),
+        },
+    )
+    return f"https://raw.githubusercontent.com/{REPO}/main/{path}"
+
+
+def poll_discord(state: dict) -> int:
+    if not os.getenv("DISCORD_BOT_TOKEN"):
+        return 0
+    channels: dict[str, str] = {}
+    try:
+        for guild in _discord("/users/@me/guilds"):
+            for ch in _discord(f"/guilds/{guild['id']}/channels"):
+                if ch.get("type") == 0 and ch.get("name") in DISCORD_CHANNELS:
+                    channels[ch["name"]] = str(ch["id"])
+    except Exception as exc:
+        print(f"discord poll failed: {exc}", file=sys.stderr)
+        return 0
+    cursors = state.setdefault("discord_cursors", {})
+    filed = 0
+    gathered: list[tuple[str, str, dict]] = []
+    for name, channel_id in channels.items():
+        last_id = int(cursors.get(name) or 0)
+        if not last_id:
+            # First run: start at NOW, never retro-file channel history.
+            try:
+                recent = _discord(f"/channels/{channel_id}/messages?limit=1")
+                cursors[name] = int(recent[0]["id"]) if recent else 1
+            except Exception:
+                cursors[name] = 1
+            continue
+        try:
+            batch = _discord(f"/channels/{channel_id}/messages?limit=100&after={last_id}") or []
+        except Exception:
+            continue
+        for m in batch:
+            gathered.append((name, channel_id, m))
+    gathered.sort(key=lambda x: int(x[2]["id"]))
+    for name, channel_id, m in gathered:
+        mid = int(m["id"])
+        cursors[name] = max(int(cursors.get(name) or 0), mid)
+        if m.get("author", {}).get("bot"):
+            continue
+        text = (m.get("content") or "").strip()
+        author = m.get("author", {}).get("username", "unknown")
+        bundle_bytes = None
+        for a in m.get("attachments", []):
+            if not str(a.get("filename", "")).lower().endswith(".json"):
+                continue
+            data = _download(a.get("url", ""))
+            if not data:
+                continue
+            try:
+                parsed = json.loads(data.decode("utf-8", errors="replace"))
+                if isinstance(parsed, dict) and "pmda" in str(parsed.get("kind", "")):
+                    bundle_bytes = data
+                    break
+            except Exception:
+                continue
+        if bundle_bytes is None and not (text and DISCORD_REPORT_SIGNAL.search(text)):
+            continue
+        bundle_line = ""
+        if bundle_bytes is not None:
+            try:
+                bundle_line = f"\n\nBundle: {_commit_bundle(str(mid), bundle_bytes)}"
+            except Exception as exc:
+                bundle_line = f"\n\n(bundle commit failed: {exc})"
+        quoted = "\n".join("> " + line for line in (text or "(no text, bundle only)").splitlines()[:20])
+        _api(
+            f"/repos/{REPO}/issues/{DROP_ISSUE}/comments",
+            method="POST",
+            body={"body": f"Report relayed from Discord #{name} (user `{author}`, message id {mid}).\n\n{quoted}{bundle_line}"},
+        )
+        try:
+            _discord(
+                f"/channels/{channel_id}/messages",
+                method="POST",
+                body={
+                    "content": (
+                        f"<@{m.get('author', {}).get('id')}> your report was filed into the tracker's "
+                        f"support pipeline (https://github.com/{REPO}/issues/{DROP_ISSUE}). "
+                        "It will be sorted into the matching analysis issue shortly."
+                    ),
+                    "message_reference": {"message_id": str(mid)},
+                    "allowed_mentions": {"replied_user": True},
+                },
+            )
+        except Exception:
+            pass
+        filed += 1
+    return filed
+
 def main() -> int:
     if not TOKEN:
         print("no GITHUB_TOKEN", file=sys.stderr)
@@ -246,8 +382,9 @@ def main() -> int:
         processed += 1
         new_last = max(new_last, cid)
     state["last_comment_id"] = new_last
+    relayed = poll_discord(state)
     save_state(state)
-    print(f"processed {processed} new report(s); last_comment_id={new_last}")
+    print(f"processed {processed} new report(s); relayed {relayed} from discord; last_comment_id={new_last}")
     return 0
 
 
