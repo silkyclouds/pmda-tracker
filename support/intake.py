@@ -205,7 +205,10 @@ def main() -> int:
             new_last = max(new_last, cid)
             continue
         bundle = None
-        for url in re.findall(r"https://github\.com/user-attachments/files/\S+?\.json", text):
+        bundle_urls = re.findall(r"https://github\.com/user-attachments/files/\S+?\.json", text)
+        # Discord-relayed reports carry their bundle as a committed repo file.
+        bundle_urls += re.findall(r"https://raw\.githubusercontent\.com/[^\s)]+?\.json", text)
+        for url in bundle_urls:
             data = _download(url)
             if data:
                 try:
