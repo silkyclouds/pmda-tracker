@@ -194,7 +194,7 @@ def update_counter(issue_number: int, version: str) -> None:
 # poll -- and acknowledges in the channel.
 
 DISCORD_API = "https://discord.com/api/v10"
-DISCORD_CHANNELS = ("support", "beta-testers")
+DISCORD_CHANNELS = ("support", "beta-testers", "log-drop")
 DISCORD_REPORT_SIGNAL = re.compile(
     r"\b(bug|broken|crash|error|fail|wrong|incorrect|missing|dup(e|licate)s?|incomplete|"
     r"empty|nothing|zero|404|mirror|match|scan(ned)?|librair|library)\b",
@@ -268,17 +268,24 @@ def poll_discord(state: dict) -> int:
     for name, channel_id, m in gathered:
         mid = int(m["id"])
         cursors[name] = max(int(cursors.get(name) or 0), mid)
-        if m.get("author", {}).get("bot"):
+        if m.get("author", {}).get("bot") and not m.get("webhook_id"):
             continue
         text = (m.get("content") or "").strip()
         author = m.get("author", {}).get("username", "unknown")
         bundle_bytes = None
         for a in m.get("attachments", []):
-            if not str(a.get("filename", "")).lower().endswith(".json"):
+            fname = str(a.get("filename", "")).lower()
+            if not (fname.endswith(".json") or fname.endswith(".json.gz")):
                 continue
             data = _download(a.get("url", ""))
             if not data:
                 continue
+            if fname.endswith(".gz"):
+                import gzip as _gz
+                try:
+                    data = _gz.decompress(data)
+                except Exception:
+                    continue
             try:
                 parsed = json.loads(data.decode("utf-8", errors="replace"))
                 if isinstance(parsed, dict) and "pmda" in str(parsed.get("kind", "")):
