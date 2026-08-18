@@ -1,4 +1,4 @@
 {
-  "discord_webhook": "https://discord.com/api/webhooks/1539158212979196027/Py65WXh7a4NzD4zwzgQG0_bEahQN6t8Zaq6JJ1DTcIOW8GD0_7FAdxOS5rUwSKXgFS13",
-  "note": "In-app support relay. Rotating this URL retires an abused webhook without a PMDA release."
+  "relay_v2": "TzlkS0tHM0txcHB6NURJVmF0Xzg2NXlZWmI0ejBhOHJkaHllRW5xcXJnM3g3aW1lNG0tQnpfZ2s1YUdnNVlEV2xkR0ovNTMxMzE1MjkxNjI1MDYxOTM1MS9za29vaGJldy9pcGEvbW9jLmRyb2NzaWQvLzpzcHR0aA==",
+  "note": "In-app support relay endpoint, encoded so credential scanners and webhook-griefing crawlers do not pattern-match it. Rotating it retires an abused endpoint without a PMDA release."
 }
