@@ -73,6 +73,10 @@ def _download(url: str) -> bytes | None:
         return None
 
 
+
+def text_is_relay(text: str) -> bool:
+    return str(text or "").startswith("Report relayed from Discord #")
+
 def load_state() -> dict:
     try:
         with open(STATE_PATH, encoding="utf-8") as f:
@@ -340,7 +344,10 @@ def main() -> int:
         if cid <= last_id:
             continue
         user = (comment.get("user") or {}).get("login") or "unknown"
-        if user.endswith("[bot]"):
+        # Discord-relayed reports are posted by the Action's own token, so
+        # they arrive bot-authored -- those MUST be classified. Every other
+        # bot comment (our acks, counters) stays skipped.
+        if user.endswith("[bot]") and not text_is_relay(comment.get("body") or ""):
             new_last = max(new_last, cid)
             continue
         text = comment.get("body") or ""
