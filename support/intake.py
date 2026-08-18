@@ -36,6 +36,15 @@ API = "https://api.github.com"
 
 MAX_BUNDLE_BYTES = 30 * 1024 * 1024
 
+TYPE_LABELS_HUMAN = {
+    "dupe-false-positive": "a duplicate verdict the user contests",
+    "dupe-missed": "a duplicate the user expected but PMDA did not report",
+    "incompletes-report": "an incompletes-detection report",
+    "mirror-install": "a MusicBrainz mirror setup problem",
+    "library-empty": "a scan that left the library looking empty",
+    "general-report": "a general report",
+}
+
 TYPES = {
     "dupe-false-positive": "Duplicate verdicts users contest (false positives)",
     "dupe-missed": "Duplicates users expected but PMDA did not report",
@@ -75,7 +84,39 @@ def _download(url: str) -> bytes | None:
 
 
 def text_is_relay(text: str) -> bool:
-    return str(text or "").startswith("Report relayed from Discord #")
+    t = str(text or "")
+    return t.startswith("Report relayed from Discord #") or t.startswith("**Report received from Discord #")
+
+
+def describe_reporter(github_user: str, text: str) -> tuple[str, str]:
+    """(who, via) in words a human reads at a glance."""
+    m = re.search(r"\*\*Report received from Discord #([\w-]+)\*\* — from `([^`]+)`", text or "")
+    if m:
+        channel, discord_user = m.group(1), m.group(2)
+        if channel == "log-drop":
+            return "an in-app sender (anonymous by design)", "the PMDA app (Settings > Logs & support)"
+        return f"`{discord_user}` on Discord", f"the Discord #{channel} channel"
+    legacy = re.search(r"Report relayed from Discord #([\w-]+) \(user `([^`]+)`", text or "")
+    if legacy:
+        channel, discord_user = legacy.group(1), legacy.group(2)
+        if channel == "log-drop":
+            return "an in-app sender (anonymous by design)", "the PMDA app (Settings > Logs & support)"
+        return f"`{discord_user}` on Discord", f"the Discord #{channel} channel"
+    return f"@{github_user}", "the GitHub drop zone (#187)"
+
+
+def extract_description(text: str) -> str:
+    """The user's own words, stripped of relay plumbing."""
+    t = str(text or "").strip()
+    m = re.search(r"\*\*In their words:\*\*\n(.*?)(?:\n\nBundle:|$)", t, re.S)
+    if m:
+        t = m.group(1)
+    t = re.sub(r"^\*\*Report received from Discord[^\n]*\n+", "", t)
+    t = re.sub(r"^Report relayed from Discord[^\n]*\n+", "", t)
+    t = re.sub(r"^> ?", "", t, flags=re.M)
+    t = re.sub(r"^In-app support report \(PMDA [^)]*\)\.\n?", "", t)
+    t = re.sub(r"\n*Bundle: \S+$", "", t)
+    return t.strip()
 
 def load_state() -> dict:
     try:
@@ -113,36 +154,51 @@ def classify(text: str, bundle: dict | None) -> str:
 
 
 def bundle_digest(bundle: dict) -> str:
+    """The install, described in sentences a human reads at a glance."""
     dup = bundle.get("duplicates") or {}
     cls = dup.get("classification") or {}
     total = sum(int(v or 0) for v in cls.values())
     actionable = int(cls.get("EXACT_DUPE") or 0) + int(cls.get("INCOMPLETE_COPY") or 0)
     inc = bundle.get("incompletes")
-    inc_count = len(inc) if isinstance(inc, list) else "n/a"
-    top = ", ".join(f"{k}: {v}" for k, v in sorted(cls.items(), key=lambda x: -int(x[1] or 0))[:5])
-    lines = [
-        f"PMDA version: `{bundle.get('pmda_version') or 'unknown'}` | pairs analyzed: {total} | "
-        f"actionable: {actionable} | incompletes rows: {inc_count}",
-        f"Top classes: {top or 'none'}",
-    ]
+    lines = ["**What their install looks like:**"]
     scan = bundle.get("scan") or {}
-    if isinstance(scan, dict) and scan.get("match_breakdown"):
-        mb = scan["match_breakdown"]
-        toggles = scan.get("toggles") or {}
-        off = ", ".join(k for k, v in sorted(toggles.items()) if v is False) or "none"
+    mb = scan.get("match_breakdown") or {}
+    if mb.get("albums_total"):
+        total_albums = int(mb.get("albums_total") or 0)
+        with_id = int(mb.get("with_musicbrainz_group_id") or 0)
+        pct = round(100 * with_id / total_albums) if total_albums else 0
         lines.append(
-            f"Scan: mode `{scan.get('workflow_mode') or 'unknown'}` | albums {mb.get('albums_total')} | "
-            f"with MB group id {mb.get('with_musicbrainz_group_id')} | edition-verified {mb.get('edition_verified')} | "
-            f"any provider source {mb.get('with_any_provider_source')} | toggles OFF: {off}"
+            f"- Library: {total_albums:,} albums, {with_id:,} with MusicBrainz identity ({pct}%), "
+            f"{int(mb.get('edition_verified') or 0):,} edition-verified"
         )
+    if total:
+        top = ", ".join(f"{k} {v}" for k, v in sorted(cls.items(), key=lambda x: -int(x[1] or 0))[:4])
+        lines.append(f"- Duplicates: {total:,} pairs examined, {actionable:,} actionable ({top})")
+    else:
+        lines.append("- Duplicates: no pairs in the bundle")
+    if isinstance(inc, list):
+        lines.append(f"- Incompletes: {len(inc):,} flagged albums")
+    mode = str(scan.get("workflow_mode") or "").strip()
+    toggles = scan.get("toggles") or {}
+    off = ", ".join(k.replace("USE_", "").replace("PIPELINE_ENABLE_", "").title() for k, v in sorted(toggles.items()) if v is False)
+    mode_bits = []
+    if mode:
+        mode_bits.append(f"workflow mode `{mode}`")
+    if off:
+        mode_bits.append(f"providers/steps off: {off}")
+    if mode_bits:
+        lines.append("- Setup: " + " | ".join(mode_bits))
+    if bundle.get("log_tail"):
+        lines.append(f"- Log tail: {len(bundle['log_tail'])} lines included")
     return "\n".join(lines)
 
 
-def counter_block(count: int, versions: list[str]) -> str:
+def counter_block(count: int, versions: list[str], analyzed: str = "0", confirmed: str = "0 (0%)", fix: str = "none yet") -> str:
     versions_txt = ", ".join(sorted(set(v for v in versions if v))) or "unknown"
     return (
         "<!-- support-bot:stats -->\n"
-        f"**Examples collected: {count}** | PMDA versions seen: {versions_txt}\n"
+        f"**Examples collected: {count}** | Analyzed: {analyzed} | Confirmed real: {confirmed}\n"
+        f"PMDA versions seen: {versions_txt} | Last fix shipped: {fix}\n"
         "<!-- /support-bot:stats -->"
     )
 
@@ -173,13 +229,27 @@ def ensure_type_issue(state: dict, type_slug: str) -> int:
 def update_counter(issue_number: int, version: str) -> None:
     issue = _api(f"/repos/{REPO}/issues/{issue_number}")
     body = issue.get("body") or ""
-    m = re.search(r"<!-- support-bot:stats -->\n\*\*Examples collected: (\d+)\*\* \| PMDA versions seen: ([^\n]*)\n<!-- /support-bot:stats -->", body)
-    count, versions = 0, []
+    m = re.search(r"<!-- support-bot:stats -->\n(.*?)\n<!-- /support-bot:stats -->", body, re.S)
+    count, versions, analyzed, confirmed, fix = 0, [], "0", "0 (0%)", "none yet"
     if m:
-        count = int(m.group(1))
-        versions = [v.strip().strip("`") for v in m.group(2).split(",") if v.strip() and v.strip() != "unknown"]
+        block = m.group(1)
+        cm = re.search(r"Examples collected: (\d+)", block)
+        if cm:
+            count = int(cm.group(1))
+        vm = re.search(r"PMDA versions seen: ([^|\n]*)", block)
+        if vm:
+            versions = [v.strip().strip("`") for v in vm.group(1).split(",") if v.strip() and v.strip() != "unknown"]
+        am = re.search(r"Analyzed: ([^|\n]*)", block)
+        if am:
+            analyzed = am.group(1).strip()
+        rm = re.search(r"Confirmed real: ([^|\n]*)", block)
+        if rm:
+            confirmed = rm.group(1).strip()
+        fm = re.search(r"Last fix shipped: ([^|\n]*)", block)
+        if fm:
+            fix = fm.group(1).strip()
     versions.append(version or "")
-    new_block = counter_block(count + 1, versions)
+    new_block = counter_block(count + 1, versions, analyzed, confirmed, fix)
     if m:
         body = body[: m.start()] + new_block + body[m.end():]
     else:
@@ -309,7 +379,12 @@ def poll_discord(state: dict) -> int:
         _api(
             f"/repos/{REPO}/issues/{DROP_ISSUE}/comments",
             method="POST",
-            body={"body": f"Report relayed from Discord #{name} (user `{author}`, message id {mid}).\n\n{quoted}{bundle_line}"},
+            body={
+                "body": (
+                    f"**Report received from Discord #{name}** — from `{author}` (message {mid}).\n\n"
+                    f"**In their words:**\n{quoted}{bundle_line}"
+                )
+            },
         )
         try:
             _discord(
@@ -317,9 +392,10 @@ def poll_discord(state: dict) -> int:
                 method="POST",
                 body={
                     "content": (
-                        f"<@{m.get('author', {}).get('id')}> your report was filed into the tracker's "
-                        f"support pipeline (https://github.com/{REPO}/issues/{DROP_ISSUE}). "
-                        "It will be sorted into the matching analysis issue shortly."
+                        f"<@{m.get('author', {}).get('id')}> Thanks, your report is in. "
+                        f"It has been filed into the support pipeline and will be sorted by problem type "
+                        f"within the half hour — you can follow the analysis here: "
+                        f"https://github.com/{REPO}/issues/{DROP_ISSUE}"
                     ),
                     "message_reference": {"message_id": str(mid)},
                     "allowed_mentions": {"replied_user": True},
@@ -355,6 +431,7 @@ def main() -> int:
             new_last = max(new_last, cid)
             continue
         bundle = None
+        bundle_url = ""
         bundle_urls = re.findall(r"https://github\.com/user-attachments/files/\S+?\.json", text)
         # Discord-relayed reports carry their bundle as a committed repo file.
         bundle_urls += re.findall(r"https://raw\.githubusercontent\.com/[^\s)]+?\.json", text)
@@ -365,20 +442,30 @@ def main() -> int:
                     candidate = json.loads(data.decode("utf-8", errors="replace"))
                     if isinstance(candidate, dict) and "pmda" in str(candidate.get("kind", "")):
                         bundle = candidate
+                        bundle_url = url
                         break
                 except Exception:
                     continue
         type_slug = classify(text, bundle)
         issue_number = ensure_type_issue(state, type_slug)
-        digest = bundle_digest(bundle) if bundle else "No bundle attached (text-only report)."
-        quoted = "\n".join("> " + line for line in text.strip().splitlines()[:20])
+        digest = bundle_digest(bundle) if bundle else "_No bundle attached: text-only report._"
+        reporter, source = describe_reporter(user, text)
+        version = str((bundle or {}).get("pmda_version") or "unknown")
+        description = extract_description(text)
+        quoted = "\n".join("> " + line for line in description.splitlines()[:20]) or "> (no description)"
         _api(
             f"/repos/{REPO}/issues/{issue_number}/comments",
             method="POST",
             body={
                 "body": (
-                    f"New example from @{user} in the drop zone "
-                    f"([original comment]({comment.get('html_url')})).\n\n{quoted}\n\n{digest}"
+                    f"### New report: {TYPE_LABELS_HUMAN.get(type_slug, type_slug)}\n\n"
+                    f"- **From:** {reporter}\n"
+                    f"- **Via:** {source}\n"
+                    f"- **PMDA version:** {version}\n\n"
+                    f"**In their words:**\n{quoted}\n\n{digest}\n\n"
+                    f"[Original message]({comment.get('html_url')})"
+                    + (f" | [Full bundle with per-track evidence]({bundle_url})" if bundle_url else "")
+                    + "\n\n_Awaiting analysis._"
                 )
             },
         )
@@ -388,8 +475,10 @@ def main() -> int:
             method="POST",
             body={
                 "body": (
-                    f"@{user} thanks -- the bot filed this report into #{issue_number} "
-                    f"(`{type_slug}`). Follow the analysis there."
+                    f"Thanks @{user} — the bot filed this report into #{issue_number}: "
+                    f"{TYPE_LABELS_HUMAN.get(type_slug, type_slug)}. "
+                    f"Analysis happens there; you will see a follow-up comment once a maintainer or the "
+                    f"analysis pass has looked at your example."
                 )
             },
         )
