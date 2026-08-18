@@ -1,0 +1,4 @@
+{
+  "discord_webhook": "https://discord.com/api/webhooks/1539158212979196027/Py65WXh7a4NzD4zwzgQG0_bEahQN6t8Zaq6JJ1DTcIOW8GD0_7FAdxOS5rUwSKXgFS13",
+  "note": "In-app support relay. Rotating this URL retires an abused webhook without a PMDA release."
+}
