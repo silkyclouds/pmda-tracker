@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_163 fixed · 21 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_165 fixed · 24 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 34 report(s), 4 open</summary>
@@ -37,7 +37,7 @@ _163 fixed · 21 open — regenerated automatically. FIXED names the version tha
 | [#162](https://github.com/silkyclouds/pmda-tracker/issues/162) | The Users page belongs under Settings | meaning_1 | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v420 | Awaiting reporter confirmation |
 | [#160](https://github.com/silkyclouds/pmda-tracker/issues/160) | Your circle and Users and shares overlap: keep one listening-activity page | meaning_1 | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v420 | Awaiting reporter confirmation |
 | [#86](https://github.com/silkyclouds/pmda-tracker/issues/86) | Onboarding should scan first, then let the user choose the scope | arty_ai | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#165](https://github.com/silkyclouds/pmda-tracker/issues/165) | Library header counts disagree with Statistics, and the size on disk looks wrong | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v416 | Shipped & closed — reopen welcome |
+| [#165](https://github.com/silkyclouds/pmda-tracker/issues/165) | Library header counts disagree with Statistics, and the size on disk looks wrong | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v493 | Shipped & closed — reopen welcome |
 | [#164](https://github.com/silkyclouds/pmda-tracker/issues/164) | The startup splash quote is not italic like every other standfirst | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
 | [#161](https://github.com/silkyclouds/pmda-tracker/issues/161) | Tools page is mostly redundant with pages that already exist | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
 | [#158](https://github.com/silkyclouds/pmda-tracker/issues/158) | Requests page: albums already in the library are not clickable | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
@@ -87,7 +87,7 @@ _163 fixed · 21 open — regenerated automatically. FIXED names the version tha
 | [#95](https://github.com/silkyclouds/pmda-tracker/issues/95) | Scan emits no heartbeat during filesystem discovery, so a healthy scan looks stalled | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v335 | Shipped & closed — reopen welcome |
 | [#82](https://github.com/silkyclouds/pmda-tracker/issues/82) | [scanner] One pacer for MusicBrainz, not two | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#81](https://github.com/silkyclouds/pmda-tracker/issues/81) | [scanner] Only look up a table of contents when the folder came off a disc | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
-| [#78](https://github.com/silkyclouds/pmda-tracker/issues/78) | Incomplete albums: the scan count and the review queue disagree | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v391 | Shipped & closed — reopen welcome |
+| [#78](https://github.com/silkyclouds/pmda-tracker/issues/78) | Incomplete albums: the scan count and the review queue disagree | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v496 | Shipped & closed — reopen welcome |
 | [#76](https://github.com/silkyclouds/pmda-tracker/issues/76) | [scanner] Wire every improvement into the live pipeline | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#75](https://github.com/silkyclouds/pmda-tracker/issues/75) | [scanner] Install the MusicBrainz call discipline on every call site | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#73](https://github.com/silkyclouds/pmda-tracker/issues/73) | [scanner] Key classical identity on the performance, not the work | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -126,7 +126,7 @@ _163 fixed · 21 open — regenerated automatically. FIXED names the version tha
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#174](https://github.com/silkyclouds/pmda-tracker/issues/174) | The duplicates page served 13 groups while the store held 6,805 | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
+| [#174](https://github.com/silkyclouds/pmda-tracker/issues/174) | The duplicates page served 13 groups while the store held 6,805 | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v494 | Awaiting reporter confirmation |
 | [#104](https://github.com/silkyclouds/pmda-tracker/issues/104) | Duplicate keeper drops the copy that has cover art | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#103](https://github.com/silkyclouds/pmda-tracker/issues/103) | Export arbitration quarantines a split album's tail as a duplicate loser | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#15](https://github.com/silkyclouds/pmda-tracker/issues/15) | Duplicate detection calls different editions an exact duplicate | lewis91 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
@@ -246,13 +246,16 @@ _163 fixed · 21 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 45 report(s), 10 open</summary>
+<summary><b>Other</b> — 50 report(s), 13 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#182](https://github.com/silkyclouds/pmda-tracker/issues/182) | Setup => Metadata Sources => Serper gets re-activated with every container restart | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v474 | Awaiting reporter confirmation |
-| [#178](https://github.com/silkyclouds/pmda-tracker/issues/178) | Question about the wording on the enrichment page | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v474 | Awaiting reporter confirmation |
-| [#177](https://github.com/silkyclouds/pmda-tracker/issues/177) | PMDA moves winners into library root, then flags them as foreign entries | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v474 | Awaiting reporter confirmation |
+| [#190](https://github.com/silkyclouds/pmda-tracker/issues/190) | Pressing hte manual backup button gave API Error: 500 INTERNAL SERVER ERROR | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#189](https://github.com/silkyclouds/pmda-tracker/issues/189) | Duplicate verdicts users contest (false positives) | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#188](https://github.com/silkyclouds/pmda-tracker/issues/188) | MusicBrainz mirror setup failures | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#187](https://github.com/silkyclouds/pmda-tracker/issues/187) | Support drops: attach your PMDA export here | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#186](https://github.com/silkyclouds/pmda-tracker/issues/186) | Show quality details in the details when reviewing albums with issues | — | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#177](https://github.com/silkyclouds/pmda-tracker/issues/177) | PMDA moves winners into library root, then flags them as foreign entries | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v476 | Awaiting reporter confirmation |
 | [#176](https://github.com/silkyclouds/pmda-tracker/issues/176) | Issue with a duplicate report reporting two different albums as duplicates | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v474 | Awaiting reporter confirmation |
 | [#171](https://github.com/silkyclouds/pmda-tracker/issues/171) | Composition: add a sample-rate filter alongside the bitrate buckets | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v419 | Awaiting reporter confirmation |
 | [#170](https://github.com/silkyclouds/pmda-tracker/issues/170) | Incompletes review: say what each button does, and show the album facts in the Detail modal | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v419 | Awaiting reporter confirmation |
@@ -261,6 +264,8 @@ _163 fixed · 21 open — regenerated automatically. FIXED names the version tha
 | [#167](https://github.com/silkyclouds/pmda-tracker/issues/167) | A review row links to an album page that answers "no longer in your library" | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
 | [#134](https://github.com/silkyclouds/pmda-tracker/issues/134) | Resume granularity is per-artist, so a 9,382-album Various Artists bucket restarts from zero … | — | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v474 | Awaiting reporter confirmation |
 | [#185](https://github.com/silkyclouds/pmda-tracker/issues/185) | Pages are computed in the background and served instantly from cache | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v473 | Shipped & closed — reopen welcome |
+| [#182](https://github.com/silkyclouds/pmda-tracker/issues/182) | Setup => Metadata Sources => Serper gets re-activated with every container restart | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v474 | Shipped & closed — reopen welcome |
+| [#178](https://github.com/silkyclouds/pmda-tracker/issues/178) | Question about the wording on the enrichment page | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v474 | Shipped & closed — reopen welcome |
 | [#155](https://github.com/silkyclouds/pmda-tracker/issues/155) | enhance the "composition" analysis | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
 | [#153](https://github.com/silkyclouds/pmda-tracker/issues/153) | Manually starting background enrichment process from tools menu leads to API Error: 409 CONFLICT | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#152](https://github.com/silkyclouds/pmda-tracker/issues/152) | How to handle "incompletes" without a pmda handbook? | — | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v410 | Shipped & closed — reopen welcome |
