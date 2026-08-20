@@ -269,6 +269,11 @@ def update_counter(issue_number: int, version: str) -> None:
 
 DISCORD_API = "https://discord.com/api/v10"
 DISCORD_CHANNELS = ("support", "beta-testers", "log-drop")
+# The maintainer and the announcement relay CHAT in these channels all day,
+# and their vocabulary is precisely the report vocabulary -- without this
+# exclusion the intake republished the maintainer's own banter on the public
+# tracker as "user reports" (2026-08-20, issues #187/#191).
+DISCORD_IGNORED_AUTHORS = {"meaning_1", "TheCaretaker", "pmda-support-bot"}
 DISCORD_REPORT_SIGNAL = re.compile(
     r"\b(bug|broken|crash|error|fail|wrong|incorrect|missing|dup(e|licate)s?|incomplete|"
     r"empty|nothing|zero|404|mirror|match|scan(ned)?|librair|library)\b",
@@ -346,6 +351,8 @@ def poll_discord(state: dict) -> int:
             continue
         text = (m.get("content") or "").strip()
         author = m.get("author", {}).get("username", "unknown")
+        if author in DISCORD_IGNORED_AUTHORS:
+            continue
         bundle_bytes = None
         for a in m.get("attachments", []):
             fname = str(a.get("filename", "")).lower()
