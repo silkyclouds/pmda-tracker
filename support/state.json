@@ -2,11 +2,12 @@
   "discord_cursors": {
     "beta-testers": 1534905904363737159,
     "log-drop": 1539457230733189240,
-    "support": 1539898236620509185
+    "support": 1539906769080422440
   },
-  "last_comment_id": 5337115103,
+  "last_comment_id": 5352839502,
   "type_issues": {
     "dupe-false-positive": 189,
+    "incompletes-report": 191,
     "mirror-install": 188
   }
 }
