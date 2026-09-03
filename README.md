@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_242 fixed · 60 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_242 fixed · 63 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 51 report(s), 5 open</summary>
@@ -232,11 +232,13 @@ _242 fixed · 60 open — regenerated automatically. FIXED names the version tha
 
 </details>
 
-<details>
-<summary><b>Settings & onboarding</b> — 29 report(s), 0 open</summary>
+<details open>
+<summary><b>Settings & onboarding</b> — 31 report(s), 2 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#306](https://github.com/silkyclouds/pmda-tracker/issues/306) | Settings offered two things it could not do: the music root in custom mode, and a removed Acq… | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
+| [#304](https://github.com/silkyclouds/pmda-tracker/issues/304) | Scanned but the library/export stayed empty | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
 | [#235](https://github.com/silkyclouds/pmda-tracker/issues/235) | Dead onboarding endpoints remain in the backend | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v519 | Shipped & closed — reopen welcome |
 | [#228](https://github.com/silkyclouds/pmda-tracker/issues/228) | Suggestion lists can be permanently empty while the first scan runs | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v520 | Shipped & closed — reopen welcome |
 | [#227](https://github.com/silkyclouds/pmda-tracker/issues/227) | Reloading the page during setup loses every answer | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v520 | Shipped & closed — reopen welcome |
@@ -310,10 +312,11 @@ _242 fixed · 60 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 101 report(s), 43 open</summary>
+<summary><b>Other</b> — 102 report(s), 44 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#305](https://github.com/silkyclouds/pmda-tracker/issues/305) | General user reports (unclassified) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#301](https://github.com/silkyclouds/pmda-tracker/issues/301) | pmda's stats seem weird in terms of reported disk usage | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#300](https://github.com/silkyclouds/pmda-tracker/issues/300) | Strange path in pmda's dupes folder | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#298](https://github.com/silkyclouds/pmda-tracker/issues/298) | Files that fail integrity checks are counted as untagged instead of reported as damaged | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
