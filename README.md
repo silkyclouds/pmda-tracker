@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_242 fixed · 63 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_242 fixed · 64 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 51 report(s), 5 open</summary>
@@ -217,10 +217,11 @@ _242 fixed · 63 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Providers & integrations</b> — 8 report(s), 1 open</summary>
+<summary><b>Providers & integrations</b> — 9 report(s), 2 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#307](https://github.com/silkyclouds/pmda-tracker/issues/307) | PMDA registered a webhook URL with no host, and the warning could not be acted on | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
 | [#265](https://github.com/silkyclouds/pmda-tracker/issues/265) | Concerts: the radar answered in 8.9 s and the section never showed | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#255](https://github.com/silkyclouds/pmda-tracker/issues/255) | The label-profile worker had picked zero labels since 2026-08-20 | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v563 | Shipped & closed — reopen welcome |
 | [#232](https://github.com/silkyclouds/pmda-tracker/issues/232) | AudioMuse detection is only surfaced on Home, not during setup | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
