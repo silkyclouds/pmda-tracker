@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_242 fixed · 64 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_242 fixed · 65 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 51 report(s), 5 open</summary>
@@ -234,10 +234,11 @@ _242 fixed · 64 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Settings & onboarding</b> — 31 report(s), 2 open</summary>
+<summary><b>Settings & onboarding</b> — 32 report(s), 3 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#308](https://github.com/silkyclouds/pmda-tracker/issues/308) | Settings confirmed a save the server had refused, and showed a status code instead of the reason | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
 | [#306](https://github.com/silkyclouds/pmda-tracker/issues/306) | Settings offered two things it could not do: the music root in custom mode, and a removed Acq… | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
 | [#304](https://github.com/silkyclouds/pmda-tracker/issues/304) | Scanned but the library/export stayed empty | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
 | [#235](https://github.com/silkyclouds/pmda-tracker/issues/235) | Dead onboarding endpoints remain in the backend | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v519 | Shipped & closed — reopen welcome |
