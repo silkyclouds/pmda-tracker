@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_242 fixed · 65 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_242 fixed · 84 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 51 report(s), 5 open</summary>
@@ -221,7 +221,7 @@ _242 fixed · 65 open — regenerated automatically. FIXED names the version tha
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#307](https://github.com/silkyclouds/pmda-tracker/issues/307) | PMDA registered a webhook URL with no host, and the warning could not be acted on | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
+| [#307](https://github.com/silkyclouds/pmda-tracker/issues/307) | PMDA registered a webhook URL with no host, and the warning could not be acted on | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v729 | Awaiting reporter confirmation |
 | [#265](https://github.com/silkyclouds/pmda-tracker/issues/265) | Concerts: the radar answered in 8.9 s and the section never showed | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#255](https://github.com/silkyclouds/pmda-tracker/issues/255) | The label-profile worker had picked zero labels since 2026-08-20 | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v563 | Shipped & closed — reopen welcome |
 | [#232](https://github.com/silkyclouds/pmda-tracker/issues/232) | AudioMuse detection is only surfaced on Home, not during setup | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -314,10 +314,29 @@ _242 fixed · 65 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 102 report(s), 44 open</summary>
+<summary><b>Other</b> — 121 report(s), 63 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#327](https://github.com/silkyclouds/pmda-tracker/issues/327) | Android: 12 testers for 14 continuous days before the app can leave closed testing | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#326](https://github.com/silkyclouds/pmda-tracker/issues/326) | Play to another PMDA client: satellites, remote control, and what "in sync" is allowed to mean | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#325](https://github.com/silkyclouds/pmda-tracker/issues/325) | Mobile: web radios are missing, and favourites have no home screen | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#324](https://github.com/silkyclouds/pmda-tracker/issues/324) | Mobile: the fullscreen player has no way to reach the artist or the album | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#323](https://github.com/silkyclouds/pmda-tracker/issues/323) | Nobody can find where a request starts, including an admin | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#322](https://github.com/silkyclouds/pmda-tracker/issues/322) | Recommendations stop at the edge of the library | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#321](https://github.com/silkyclouds/pmda-tracker/issues/321) | Synced lyrics are fetched and cached, and nothing tells anyone | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#320](https://github.com/silkyclouds/pmda-tracker/issues/320) | Ghost folders — metadata with no music — are invisible to every queue | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#319](https://github.com/silkyclouds/pmda-tracker/issues/319) | The trash is created inside the music folder, where every other tool is watching | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#318](https://github.com/silkyclouds/pmda-tracker/issues/318) | The folder naming template has no documented vocabulary, and no form for multi-disc | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#317](https://github.com/silkyclouds/pmda-tracker/issues/317) | Switching to managed mode has no path that adopts an already-organised library | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#316](https://github.com/silkyclouds/pmda-tracker/issues/316) | Downloading the support logs answers "Authentication required", while sending them works | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#315](https://github.com/silkyclouds/pmda-tracker/issues/315) | Folders and file types PMDA must never touch, with @eaDir known out of the box | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#314](https://github.com/silkyclouds/pmda-tracker/issues/314) | The player named one track and played another | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#313](https://github.com/silkyclouds/pmda-tracker/issues/313) | Gapless was armed inside a 120 ms window by an event that fires every 266 ms | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#312](https://github.com/silkyclouds/pmda-tracker/issues/312) | 237 settings, 107 with no control, 17 in two places at once | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#311](https://github.com/silkyclouds/pmda-tracker/issues/311) | A shared link led to an image, and its player said nothing at all | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#310](https://github.com/silkyclouds/pmda-tracker/issues/310) | A refused save deleted the edit it was refusing | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#309](https://github.com/silkyclouds/pmda-tracker/issues/309) | A public share link is built from the sharer's own address, so a LAN address leaves the building | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#305](https://github.com/silkyclouds/pmda-tracker/issues/305) | General user reports (unclassified) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#301](https://github.com/silkyclouds/pmda-tracker/issues/301) | pmda's stats seem weird in terms of reported disk usage | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#300](https://github.com/silkyclouds/pmda-tracker/issues/300) | Strange path in pmda's dupes folder | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
