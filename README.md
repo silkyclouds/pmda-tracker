@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_269 fixed · 60 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_270 fixed · 60 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 51 report(s), 4 open</summary>
@@ -314,10 +314,11 @@ _269 fixed · 60 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 124 report(s), 47 open</summary>
+<summary><b>Other</b> — 125 report(s), 47 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#331](https://github.com/silkyclouds/pmda-tracker/issues/331) | Web search costs money or returns nothing: add a keyless backend with one-click install | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#328](https://github.com/silkyclouds/pmda-tracker/issues/328) | The library search answers a correctly-spelled name in almost six seconds | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#327](https://github.com/silkyclouds/pmda-tracker/issues/327) | Android: 12 testers for 14 continuous days before the app can leave closed testing | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#326](https://github.com/silkyclouds/pmda-tracker/issues/326) | Play to another PMDA client: satellites, remote control, and what "in sync" is allowed to mean | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -330,7 +331,6 @@ _269 fixed · 60 open — regenerated automatically. FIXED names the version tha
 | [#318](https://github.com/silkyclouds/pmda-tracker/issues/318) | The folder naming template has no documented vocabulary, and no form for multi-disc | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#317](https://github.com/silkyclouds/pmda-tracker/issues/317) | Switching to managed mode has no path that adopts an already-organised library | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#312](https://github.com/silkyclouds/pmda-tracker/issues/312) | 237 settings, 107 with no control, 17 in two places at once | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#309](https://github.com/silkyclouds/pmda-tracker/issues/309) | A public share link is built from the sharer's own address, so a LAN address leaves the building | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#305](https://github.com/silkyclouds/pmda-tracker/issues/305) | General user reports (unclassified) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#301](https://github.com/silkyclouds/pmda-tracker/issues/301) | pmda's stats seem weird in terms of reported disk usage | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#298](https://github.com/silkyclouds/pmda-tracker/issues/298) | Files that fail integrity checks are counted as untagged instead of reported as damaged | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -374,6 +374,7 @@ _269 fixed · 60 open — regenerated automatically. FIXED names the version tha
 | [#313](https://github.com/silkyclouds/pmda-tracker/issues/313) | Gapless was armed inside a 120 ms window by an event that fires every 266 ms | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v727 | Shipped & closed — reopen welcome |
 | [#311](https://github.com/silkyclouds/pmda-tracker/issues/311) | A shared link led to an image, and its player said nothing at all | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v732 | Shipped & closed — reopen welcome |
 | [#310](https://github.com/silkyclouds/pmda-tracker/issues/310) | A refused save deleted the edit it was refusing | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v726 | Shipped & closed — reopen welcome |
+| [#309](https://github.com/silkyclouds/pmda-tracker/issues/309) | A public share link is built from the sharer's own address, so a LAN address leaves the building | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v743 | Shipped & closed — reopen welcome |
 | [#300](https://github.com/silkyclouds/pmda-tracker/issues/300) | Strange path in pmda's dupes folder | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v742 | Shipped & closed — reopen welcome |
 | [#297](https://github.com/silkyclouds/pmda-tracker/issues/297) | 54 modules read standard-library names that only the runtime binding provides | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#296](https://github.com/silkyclouds/pmda-tracker/issues/296) | A shared link should open on the player, and its thumbs-up should come back to you | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
