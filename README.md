@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_282 fixed · 54 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_282 fixed · 58 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 51 report(s), 3 open</summary>
@@ -314,10 +314,14 @@ _282 fixed · 54 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 131 report(s), 44 open</summary>
+<summary><b>Other</b> — 135 report(s), 48 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#341](https://github.com/silkyclouds/pmda-tracker/issues/341) | A query reads a table that does not exist, and an unreadable-folder warning names no folder | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v756 | Awaiting reporter confirmation |
+| [#340](https://github.com/silkyclouds/pmda-tracker/issues/340) | A correct API key cannot be re-saved, so a failing provider offers nothing to try | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#339](https://github.com/silkyclouds/pmda-tracker/issues/339) | The duplicates page crashes with RecursionError: a bound module overwrites the function it calls | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v756 | Awaiting reporter confirmation |
+| [#338](https://github.com/silkyclouds/pmda-tracker/issues/338) | The trash can live outside every mounted volume, so a move to it is a delayed delete | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v756 | Awaiting reporter confirmation |
 | [#337](https://github.com/silkyclouds/pmda-tracker/issues/337) | Please rework the "ghost folders" page | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#336](https://github.com/silkyclouds/pmda-tracker/issues/336) | PMDa suggests a weird "move plan" for duplicates => trash | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#335](https://github.com/silkyclouds/pmda-tracker/issues/335) | "Move to quarantine" button not actionable | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
