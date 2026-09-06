@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_282 fixed · 48 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_282 fixed · 50 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 51 report(s), 3 open</summary>
@@ -148,7 +148,7 @@ _282 fixed · 48 open — regenerated automatically. FIXED names the version tha
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#302](https://github.com/silkyclouds/pmda-tracker/issues/302) | A folder holding the same track twice is invisible to both queues | meaning_1 | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#302](https://github.com/silkyclouds/pmda-tracker/issues/302) | A folder holding the same track twice is invisible to both queues | meaning_1 | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v749 | Awaiting reporter confirmation |
 | [#299](https://github.com/silkyclouds/pmda-tracker/issues/299) | Albums split in half across two folders: detect, recompose, and make the split impossible | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v719 | Awaiting reporter confirmation |
 | [#239](https://github.com/silkyclouds/pmda-tracker/issues/239) | Assorted feedback on the Dupes handling interface + Album view in library | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v719 | Awaiting reporter confirmation |
 | [#174](https://github.com/silkyclouds/pmda-tracker/issues/174) | The duplicates page served 13 groups while the store held 6,805 | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v494 | Shipped & closed — reopen welcome |
@@ -314,10 +314,12 @@ _282 fixed · 48 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 125 report(s), 38 open</summary>
+<summary><b>Other</b> — 127 report(s), 40 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#333](https://github.com/silkyclouds/pmda-tracker/issues/333) | The album menu exists on one page out of a dozen | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v749 | Awaiting reporter confirmation |
+| [#332](https://github.com/silkyclouds/pmda-tracker/issues/332) | One-click AudioMuse, like every other local tool | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v750 | Awaiting reporter confirmation |
 | [#331](https://github.com/silkyclouds/pmda-tracker/issues/331) | Web search costs money or returns nothing: add a keyless backend with one-click install | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v748 | Awaiting reporter confirmation |
 | [#328](https://github.com/silkyclouds/pmda-tracker/issues/328) | The library search answers a correctly-spelled name in almost six seconds | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#327](https://github.com/silkyclouds/pmda-tracker/issues/327) | Android: 12 testers for 14 continuous days before the app can leave closed testing | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -325,14 +327,14 @@ _282 fixed · 48 open — regenerated automatically. FIXED names the version tha
 | [#325](https://github.com/silkyclouds/pmda-tracker/issues/325) | Mobile: web radios are missing, and favourites have no home screen | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#324](https://github.com/silkyclouds/pmda-tracker/issues/324) | Mobile: the fullscreen player has no way to reach the artist or the album | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#322](https://github.com/silkyclouds/pmda-tracker/issues/322) | Recommendations stop at the edge of the library | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#321](https://github.com/silkyclouds/pmda-tracker/issues/321) | Synced lyrics are fetched and cached, and nothing tells anyone | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v747 | Awaiting reporter confirmation |
-| [#320](https://github.com/silkyclouds/pmda-tracker/issues/320) | Ghost folders — metadata with no music — are invisible to every queue | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#321](https://github.com/silkyclouds/pmda-tracker/issues/321) | Synced lyrics are fetched and cached, and nothing tells anyone | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v749 | Awaiting reporter confirmation |
+| [#320](https://github.com/silkyclouds/pmda-tracker/issues/320) | Ghost folders — metadata with no music — are invisible to every queue | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v749 | Awaiting reporter confirmation |
 | [#317](https://github.com/silkyclouds/pmda-tracker/issues/317) | Switching to managed mode has no path that adopts an already-organised library | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#312](https://github.com/silkyclouds/pmda-tracker/issues/312) | 237 settings, 107 with no control, 17 in two places at once | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#305](https://github.com/silkyclouds/pmda-tracker/issues/305) | General user reports (unclassified) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#301](https://github.com/silkyclouds/pmda-tracker/issues/301) | pmda's stats seem weird in terms of reported disk usage | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#298](https://github.com/silkyclouds/pmda-tracker/issues/298) | Files that fail integrity checks are counted as untagged instead of reported as damaged | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v748 | Awaiting reporter confirmation |
-| [#289](https://github.com/silkyclouds/pmda-tracker/issues/289) | Artist rows that are never the artist of anything — what are they? | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#298](https://github.com/silkyclouds/pmda-tracker/issues/298) | Files that fail integrity checks are counted as untagged instead of reported as damaged | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v749 | Awaiting reporter confirmation |
+| [#289](https://github.com/silkyclouds/pmda-tracker/issues/289) | Artist rows that are never the artist of anything — what are they? | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v749 | Awaiting reporter confirmation |
 | [#288](https://github.com/silkyclouds/pmda-tracker/issues/288) | Work titles are filed as artists, and the conservative repair leaves a residue | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#287](https://github.com/silkyclouds/pmda-tracker/issues/287) | Artist identity: the same artist under several rows, and no campaign to group them | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#286](https://github.com/silkyclouds/pmda-tracker/issues/286) | Classical, end to end: canonical composers, work catalogues, roles, sub-genres — plus the ing… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
