@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_282 fixed · 67 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_282 fixed · 68 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 52 report(s), 4 open</summary>
@@ -323,10 +323,11 @@ _282 fixed · 67 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 135 report(s), 48 open</summary>
+<summary><b>Other</b> — 136 report(s), 49 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#351](https://github.com/silkyclouds/pmda-tracker/issues/351) | A rebuild deletes the listening history, the playlists' contents and the ratings | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v766 | Awaiting reporter confirmation |
 | [#341](https://github.com/silkyclouds/pmda-tracker/issues/341) | A query reads a table that does not exist, and an unreadable-folder warning names no folder | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v756 | Awaiting reporter confirmation |
 | [#340](https://github.com/silkyclouds/pmda-tracker/issues/340) | A correct API key cannot be re-saved, so a failing provider offers nothing to try | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#339](https://github.com/silkyclouds/pmda-tracker/issues/339) | The duplicates page crashes with RecursionError: a bound module overwrites the function it calls | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v756 | Awaiting reporter confirmation |
