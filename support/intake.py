@@ -133,24 +133,43 @@ def save_state(state: dict) -> None:
 
 
 def classify(text: str, bundle: dict | None) -> str:
+    """Which typed issue this report belongs on, decided by the WORDS.
+
+    The topic rules used to run only when no bundle was attached. With a bundle
+    the function asked two dupe questions and then fell through to
+    `dupe-false-positive` — so "having a bundle" was read as "being about
+    duplicates". Every in-app send carries duplicate evidence by construction,
+    because that is part of the bundle format, so the fallback fired constantly:
+    four reports whose first words were "local mirror refuses to setup", "MB
+    Local failing", "my docker mirror build has been stuck at 30%" and "Local
+    Docker setup appears to be stuck?" were all filed as contested duplicate
+    verdicts, on an issue nobody reading about the mirror would open.
+
+    So the rules are one list now, and they read the reporter's sentence. The
+    bundle is evidence about the install; it is not a statement about what the
+    person is asking, and it no longer votes on the type. Order matters: the
+    first rule that matches wins, most specific first.
+    """
     t = (text or "").lower()
-    if bundle is None:
-        if re.search(r"mirror|musicbrainz[- ]docker|replication", t):
-            return "mirror-install"
-        if re.search(r"(library|export|librairie).{0,40}(empty|vide|nothing|rien|only \d|que \d)|nothing (was )?(moved|exported|filed)", t):
-            return "library-empty"
-        if re.search(r"incomplete|missing track", t):
-            return "incompletes-report"
-        if re.search(r"dup|copy|copies", t):
-            return "dupe-missed" if re.search(r"miss|not show|no dupes|nothing|zero", t) else "dupe-false-positive"
-        return "general-report"
+    # "MB local" is what people call the mirror in their own words — one report
+    # opened with exactly "MB Local failing" and matched none of the three
+    # original terms, so it landed unclassified even before the bundle bug.
+    # `\bmb\b` does not match "mbid".
+    if re.search(r"mirror|musicbrainz[- ]docker|replication|\bmb\b[- ]?local|local[- ]?\bmb\b", t):
+        return "mirror-install"
+    if re.search(r"(library|export|librairie).{0,40}(empty|vide|nothing|rien|only \d|que \d)|nothing (was )?(moved|exported|filed)", t):
+        return "library-empty"
+    # "incomplete" alongside "dup" is usually a duplicate report describing an
+    # incomplete copy, which is a dupe verdict and not a detection report.
     if re.search(r"incomplete|missing track", t) and not re.search(r"dup", t):
         return "incompletes-report"
-    if re.search(r"false|nonsense|wrong|not (a )?dup|shouldn.t|mis-?identif", t):
+    if re.search(r"dup|copy|copies", t):
+        if re.search(r"miss(ed|ing)|expected|should (be|show)|does ?n.t (show|find)|zero dup|no dupes|not show|nothing", t):
+            return "dupe-missed"
         return "dupe-false-positive"
-    if re.search(r"miss(ed|ing)|expected|should (be|show)|does ?n.t (show|find)|zero dup", t):
-        return "dupe-missed"
-    return "dupe-false-positive" if bundle else "general-report"
+    # Nothing in the words names a product area. That is what the unclassified
+    # issue is for; guessing a type here is how the mis-filing happened.
+    return "general-report"
 
 
 def bundle_digest(bundle: dict) -> str:
