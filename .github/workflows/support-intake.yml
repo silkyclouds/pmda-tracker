@@ -24,6 +24,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      # The classifier decides which typed issue a report lands on, and a
+      # mis-typed report is buried rather than lost. Gate the run on it.
+      - name: Check the classifier
+        run: python3 support/test_classify.py
       - name: Run intake
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
