@@ -66,7 +66,7 @@ Advanced, with its default.
 |---|---|---|
 | You | everyone | Profile, Playing, Concerts, and Shared libraries when another admin shared one |
 | Setup | admin | Folders, Files, Sources, Scan, Players, Acquisition, Instant play copy |
-| Server | admin | Server, Agents, Users, Backups, Maintenance, Logs & support, Danger zone |
+| Server | admin | Server, Agents, Users, Backups, Logs & support, Danger zone |
 
 ### You
 
@@ -92,11 +92,10 @@ Advanced, with its default.
 
 | Page | What is on it |
 |---|---|
-| Server | Name, public address, e-mail for invitations, notifications, what is running now. |
+| Server | Name, public address, e-mail for invitations, notifications, what is running now, and the setup again. |
 | Agents | The MCP key, what an agent may do, what it did. |
 | Users | Roles, requests, invitations. |
 | Backups | Nightly snapshots, restore. |
-| Maintenance | Re-read the tags. Import a trusted folder. |
 | Logs & support | One anonymised report to send. |
 | Danger zone | Reset the library data. Settings and users stay. |
 
@@ -106,12 +105,31 @@ Every former section id still opens its successor: `#settings-pipeline` opens Sc
 `#settings-published-library` opens Files, `#settings-mcp` opens Agents, and
 `/settings/user` opens You.
 
+## The Inbox
+
+The Inbox page lists the albums still sitting in your Inbox folder. A scan does the
+work: it does not replace it.
+
+| What happens | Where the album goes |
+|---|---|
+| Identity verified | Moved into the organised folder at the end of the scan |
+| Duplicate or incomplete | Set aside, as before |
+| Anything else | Stays in the Inbox folder, and this page lists it |
+
+An album stays when PMDA could not identify it with confidence, when its audio is damaged
+or still being copied, or when it is verified but cannot move yet. Its tile says which.
+
+Look at the page after a scan, when the Inbox count in the sidebar is above zero. On a
+tile you can search the providers again, write the folder name into the tags and search
+again, add the album to the library unverified, or move it to the trash. "Move the ready
+ones now" files the verified albums without waiting for the next scan.
+
 ## What changed, in numbers
 
 | | Before | From v960 |
 |---|---|---|
 | Wizard screens before the scan | 19 to 23 | 3 to 5 |
-| Settings pages | 2 pages, 28 entries | 1 page, 17 entries (3 for a standard user) |
+| Settings pages | 2 pages, 28 entries | 1 page, 16 entries (3 for a standard user) |
 | Rows on screen for an admin | about 180 | about 70, the rest under Advanced |
 | Longest help sentence | 62 words | 16 words, enforced by a test |
 | Names for one mode | three | one, shared by the wizard and every page |
