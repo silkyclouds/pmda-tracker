@@ -376,7 +376,7 @@ _407 fixed · 61 open — regenerated automatically. FIXED names the version tha
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#468](https://github.com/silkyclouds/pmda-tracker/issues/468) | ERROR:  relation "files_release_expectations" does not exist at character 22 | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#468](https://github.com/silkyclouds/pmda-tracker/issues/468) | ERROR:  relation "files_release_expectations" does not exist at character 22 | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1000 | Awaiting reporter confirmation |
 | [#429](https://github.com/silkyclouds/pmda-tracker/issues/429) | Files index counts unreadable (PostgreSQL connection unavailable) | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1000 | Awaiting reporter confirmation |
 | [#428](https://github.com/silkyclouds/pmda-tracker/issues/428) | Improve the layout of the "editions" view | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#427](https://github.com/silkyclouds/pmda-tracker/issues/427) | Looking at incompletes in my inbox, pmda claims its missing the year but that is wrong | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
