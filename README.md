@@ -26,15 +26,20 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_351 fixed · 58 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_407 fixed · 61 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
-<summary><b>UI / UX</b> — 53 report(s), 2 open</summary>
+<summary><b>UI / UX</b> — 59 report(s), 1 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
 | [#263](https://github.com/silkyclouds/pmda-tracker/issues/263) | Design port: the React layer now follows the boards, page by page | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#86](https://github.com/silkyclouds/pmda-tracker/issues/86) | Onboarding should scan first, then let the user choose the scope | arty_ai | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v753 | Awaiting reporter confirmation |
+| [#458](https://github.com/silkyclouds/pmda-tracker/issues/458) | The home's "Acclaimed, unplayed" row and the library totals time out on large libraries | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#452](https://github.com/silkyclouds/pmda-tracker/issues/452) | Missing records sit in a separate card far below the artist's shelves, and Follow downloads m… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#451](https://github.com/silkyclouds/pmda-tracker/issues/451) | The search page buries what the library holds under unrelated catalogue results | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#448](https://github.com/silkyclouds/pmda-tracker/issues/448) | The versions picker offers different records that share a title as versions of one album | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#444](https://github.com/silkyclouds/pmda-tracker/issues/444) | The editions page leads with pass counters, and the edition pass never reaches albums without… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#434](https://github.com/silkyclouds/pmda-tracker/issues/434) | The Inbox page fails to load on installs that never ran the MCP bridge | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#355](https://github.com/silkyclouds/pmda-tracker/issues/355) | Controls revealed only on hover do not exist on a touch screen, and several have no other route | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#350](https://github.com/silkyclouds/pmda-tracker/issues/350) | The web radios and what they are playing were on a page the router does not serve | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v763 | Shipped & closed — reopen welcome |
 | [#268](https://github.com/silkyclouds/pmda-tracker/issues/268) | Light theme: the tools and admin screens join the eleven design pages | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -70,6 +75,7 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#92](https://github.com/silkyclouds/pmda-tracker/issues/92) | Library export label is truncated, and its relationship to the Export stage is unclear | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v392 | Shipped & closed — reopen welcome |
 | [#89](https://github.com/silkyclouds/pmda-tracker/issues/89) | Nothing says which features stay inert until the first scan finalizes | edith1775 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#88](https://github.com/silkyclouds/pmda-tracker/issues/88) | Scan History: a resumed scan looks like a string of short failed runs | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v391 | Shipped & closed — reopen welcome |
+| [#86](https://github.com/silkyclouds/pmda-tracker/issues/86) | Onboarding should scan first, then let the user choose the scope | arty_ai | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v753 | Shipped & closed — reopen welcome |
 | [#84](https://github.com/silkyclouds/pmda-tracker/issues/84) | Heart and Like do the same thing: pick one, or make the rating model explicit | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.5 | Shipped & closed — reopen welcome |
 | [#79](https://github.com/silkyclouds/pmda-tracker/issues/79) | Scan vocabulary is undocumented: SKIPPED, FLAGGED, SOFT_MATCH, Files-safe, live index, backlog | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#77](https://github.com/silkyclouds/pmda-tracker/issues/77) | Artwork cache: missing .webp raises a traceback mid-scan | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v399 | Shipped & closed — reopen welcome |
@@ -90,10 +96,21 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details>
-<summary><b>Scanner & pipeline</b> — 49 report(s), 0 open</summary>
+<summary><b>Scanner & pipeline</b> — 60 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#450](https://github.com/silkyclouds/pmda-tracker/issues/450) | A changed-only scan for a few inbox albums takes hours | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#443](https://github.com/silkyclouds/pmda-tracker/issues/443) | Incomplete or truncated albums leave the inbox as if they were whole | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#441](https://github.com/silkyclouds/pmda-tracker/issues/441) | Loose files go to the trash when AcoustID is not set up, or while they are still being copied | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#440](https://github.com/silkyclouds/pmda-tracker/issues/440) | An album dropped as loose files is scattered into one folder per track | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#439](https://github.com/silkyclouds/pmda-tracker/issues/439) | A loose track at the top of the inbox goes straight to the trash | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#436](https://github.com/silkyclouds/pmda-tracker/issues/436) | Albums split or nested by earlier versions stay broken in the library | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#435](https://github.com/silkyclouds/pmda-tracker/issues/435) | Multi-disc sets arriving in several shapes are split over several album folders | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#433](https://github.com/silkyclouds/pmda-tracker/issues/433) | An inbox folder whose music sits one level down never leaves, and its dialog says there are n… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#432](https://github.com/silkyclouds/pmda-tracker/issues/432) | Cue sheets, artwork and emptied folders stay behind in the inbox after the music has moved | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#431](https://github.com/silkyclouds/pmda-tracker/issues/431) | Inbox albums take up to 22 minutes to leave the inbox after they land | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#430](https://github.com/silkyclouds/pmda-tracker/issues/430) | Identified inbox albums stay in the inbox until the inbox button is pressed | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#342](https://github.com/silkyclouds/pmda-tracker/issues/342) | A partial export rebuilds the entire library index | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v758 | Shipped & closed — reopen welcome |
 | [#217](https://github.com/silkyclouds/pmda-tracker/issues/217) | The first scan no longer chains the improvement pass | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#214](https://github.com/silkyclouds/pmda-tracker/issues/214) | The scan flags albums as incomplete that the review page then discards | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v519 | Shipped & closed — reopen welcome |
@@ -147,13 +164,17 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Duplicates</b> — 8 report(s), 2 open</summary>
+<summary><b>Duplicates</b> — 12 report(s), 2 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#299](https://github.com/silkyclouds/pmda-tracker/issues/299) | Albums split in half across two folders: detect, recompose, and make the split impossible | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v719 | Awaiting reporter confirmation |
+| [#447](https://github.com/silkyclouds/pmda-tracker/issues/447) | A better-sounding arrival without a cover loses to a lesser library copy that has one | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#239](https://github.com/silkyclouds/pmda-tracker/issues/239) | Assorted feedback on the Dupes handling interface + Album view in library | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v719 | Awaiting reporter confirmation |
+| [#449](https://github.com/silkyclouds/pmda-tracker/issues/449) | The Duplicates badge reruns the whole duplicate analysis every minute and stalls scans | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#446](https://github.com/silkyclouds/pmda-tracker/issues/446) | A lesser copy of a library album can displace the library copy or be filed beside it | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#445](https://github.com/silkyclouds/pmda-tracker/issues/445) | A copy of an album already in the library stays in the inbox until a later scan | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#302](https://github.com/silkyclouds/pmda-tracker/issues/302) | A folder holding the same track twice is invisible to both queues | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v749 | Shipped & closed — reopen welcome |
+| [#299](https://github.com/silkyclouds/pmda-tracker/issues/299) | Albums split in half across two folders: detect, recompose, and make the split impossible | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v719 | Shipped & closed — reopen welcome |
 | [#174](https://github.com/silkyclouds/pmda-tracker/issues/174) | The duplicates page served 13 groups while the store held 6,805 | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v494 | Shipped & closed — reopen welcome |
 | [#104](https://github.com/silkyclouds/pmda-tracker/issues/104) | Duplicate keeper drops the copy that has cover art | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#103](https://github.com/silkyclouds/pmda-tracker/issues/103) | Export arbitration quarantines a split album's tail as a duplicate loser | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -163,11 +184,14 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Metadata & matching</b> — 35 report(s), 1 open</summary>
+<summary><b>Metadata & matching</b> — 38 report(s), 1 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
 | [#362](https://github.com/silkyclouds/pmda-tracker/issues/362) | An artist's identity key can be a whole credit line, so several composers share one row | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#442](https://github.com/silkyclouds/pmda-tracker/issues/442) | An image rip (one audio file and a cue sheet) is identified and played as one track | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#438](https://github.com/silkyclouds/pmda-tracker/issues/438) | Albums are refused or published with wrong titles when track titles carry a guest credit or t… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#437](https://github.com/silkyclouds/pmda-tracker/issues/437) | Compilations and anthology sets are filed under a performer, merged, or refused as artist_mis… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#364](https://github.com/silkyclouds/pmda-tracker/issues/364) | Pressing notes are stored as album reviews | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#363](https://github.com/silkyclouds/pmda-tracker/issues/363) | One enrichment path stores biographies the project's own quality guard rejects | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#352](https://github.com/silkyclouds/pmda-tracker/issues/352) | Web search spends its time on the backend that never answers, and skips the one that does | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -206,12 +230,21 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Mobile apps</b> — 11 report(s), 2 open</summary>
+<summary><b>Mobile apps</b> — 20 report(s), 8 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#467](https://github.com/silkyclouds/pmda-tracker/issues/467) | With a VPN on, "Download over Wi-Fi only" holds downloads even on Wi-Fi | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#466](https://github.com/silkyclouds/pmda-tracker/issues/466) | A link opens its page behind the open full player | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#465](https://github.com/silkyclouds/pmda-tracker/issues/465) | The full player once could not be closed after an appearance change and a link | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#464](https://github.com/silkyclouds/pmda-tracker/issues/464) | A label with no logo shows an empty white square in the app | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#463](https://github.com/silkyclouds/pmda-tracker/issues/463) | Pages opened from a link show the Radio tab as selected | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#462](https://github.com/silkyclouds/pmda-tracker/issues/462) | The mobile app changes its look from screen to screen, and some acts need a gesture to reach | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#368](https://github.com/silkyclouds/pmda-tracker/issues/368) | Label, concert and genre screens in the app lag the web UI's editorial treatment | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#365](https://github.com/silkyclouds/pmda-tracker/issues/365) | Editorial cards print a counted sentence while the written prose goes unread | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#460](https://github.com/silkyclouds/pmda-tracker/issues/460) | The server does not serve the edition, credit and contributor facts the redesigned app shows | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#459](https://github.com/silkyclouds/pmda-tracker/issues/459) | A listener cannot take a like back or fully delete their own account | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#454](https://github.com/silkyclouds/pmda-tracker/issues/454) | CarPlay and the phone show the wrong total length for transcoded tracks | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#370](https://github.com/silkyclouds/pmda-tracker/issues/370) | The mini player's close control does not dismiss the bar for a radio station | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.8 | Shipped & closed — reopen welcome |
 | [#367](https://github.com/silkyclouds/pmda-tracker/issues/367) | Player: seek jumps a track, the dismissal gesture is unreliable, and the play control is a co… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.8 | Shipped & closed — reopen welcome |
 | [#366](https://github.com/silkyclouds/pmda-tracker/issues/366) | Radio station logos render in the web UI but not in the mobile app | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.8 | Shipped & closed — reopen welcome |
@@ -235,12 +268,13 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 
 </details>
 
-<details open>
-<summary><b>Providers & integrations</b> — 10 report(s), 1 open</summary>
+<details>
+<summary><b>Providers & integrations</b> — 11 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#361](https://github.com/silkyclouds/pmda-tracker/issues/361) | The artist-image cooldown is flat, so the imageless tail is re-asked every week for ever | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#453](https://github.com/silkyclouds/pmda-tracker/issues/453) | A record's sleeve shows blank for a day after one failed Cover Art Archive request | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#361](https://github.com/silkyclouds/pmda-tracker/issues/361) | The artist-image cooldown is flat, so the imageless tail is re-asked every week for ever | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#307](https://github.com/silkyclouds/pmda-tracker/issues/307) | PMDA registered a webhook URL with no host, and the warning could not be acted on | debtdeflation | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v729 | Shipped & closed — reopen welcome |
 | [#265](https://github.com/silkyclouds/pmda-tracker/issues/265) | Concerts: the radar answered in 8.9 s and the section never showed | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#255](https://github.com/silkyclouds/pmda-tracker/issues/255) | The label-profile worker had picked zero labels since 2026-08-20 | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v563 | Shipped & closed — reopen welcome |
@@ -254,10 +288,11 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details>
-<summary><b>Settings & onboarding</b> — 33 report(s), 0 open</summary>
+<summary><b>Settings & onboarding</b> — 34 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#456](https://github.com/silkyclouds/pmda-tracker/issues/456) | A support bundle cannot explain why an album stays in the inbox | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#347](https://github.com/silkyclouds/pmda-tracker/issues/347) | The web-search order setting cannot express anything | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#308](https://github.com/silkyclouds/pmda-tracker/issues/308) | Settings confirmed a save the server had refused, and showed a status code instead of the reason | debtdeflation | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v726 | Shipped & closed — reopen welcome |
 | [#306](https://github.com/silkyclouds/pmda-tracker/issues/306) | Settings offered two things it could not do: the music root in custom mode, and a removed Acq… | debtdeflation | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -295,16 +330,17 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Deployment & docs</b> — 21 report(s), 3 open</summary>
+<summary><b>Deployment & docs</b> — 22 report(s), 1 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#184](https://github.com/silkyclouds/pmda-tracker/issues/184) | Why PostgreSQL? Measured, on a library big enough to hurt | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v753 | Awaiting reporter confirmation |
-| [#179](https://github.com/silkyclouds/pmda-tracker/issues/179) | One-click MusicBrainz mirror: proven end to end, after two bugs that made it impossible | bitsofbitsofbits, iecj, mushm0uth | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v627 | Awaiting reporter confirmation |
 | [#33](https://github.com/silkyclouds/pmda-tracker/issues/33) | Legacy cleanup campaign: dead modes, dead vars, dead log lines, monolith factoring, security … | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#455](https://github.com/silkyclouds/pmda-tracker/issues/455) | Stopping the container shuts the database down under the running app, or leaves the container… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#303](https://github.com/silkyclouds/pmda-tracker/issues/303) | A 401 is not proof an endpoint works: five routes shipped dead behind the auth guard | meaning_1 | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#266](https://github.com/silkyclouds/pmda-tracker/issues/266) | Every cropping worker re-ran the whole of pmda.py — including the migrations | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#226](https://github.com/silkyclouds/pmda-tracker/issues/226) | The public address of the server has no step anywhere | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v520 | Shipped & closed — reopen welcome |
+| [#184](https://github.com/silkyclouds/pmda-tracker/issues/184) | Why PostgreSQL? Measured, on a library big enough to hurt | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v753 | Shipped & closed — reopen welcome |
+| [#179](https://github.com/silkyclouds/pmda-tracker/issues/179) | One-click MusicBrainz mirror: proven end to end, after two bugs that made it impossible | bitsofbitsofbits, iecj, mushm0uth | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v627 | Shipped & closed — reopen welcome |
 | [#93](https://github.com/silkyclouds/pmda-tracker/issues/93) | Document whether PMDA and Jellyfin can share one music library | bitsofbitsofbits | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#87](https://github.com/silkyclouds/pmda-tracker/issues/87) | Cache layers are undocumented: which paths want NVMe, and how much each will consume | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#70](https://github.com/silkyclouds/pmda-tracker/issues/70) | [scanner] Test container disk leak filled the Docker pool | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -324,10 +360,11 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details>
-<summary><b>Sharing & social</b> — 3 report(s), 0 open</summary>
+<summary><b>Sharing & social</b> — 4 report(s), 0 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#469](https://github.com/silkyclouds/pmda-tracker/issues/469) | Other listeners' account details and ratings leak between accounts | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#222](https://github.com/silkyclouds/pmda-tracker/issues/222) | The listening opt-in disappeared from the personal setup | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#221](https://github.com/silkyclouds/pmda-tracker/issues/221) | The sharing preferences step disappeared from the personal setup | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#31](https://github.com/silkyclouds/pmda-tracker/issues/31) | Device-link check crashes: 'sqlite3.Row' object has no attribute 'get' | cissoubaka | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
@@ -335,21 +372,30 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 183 report(s), 45 open</summary>
+<summary><b>Other</b> — 205 report(s), 46 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#410](https://github.com/silkyclouds/pmda-tracker/issues/410) | API Error: 409 when saving the onboarding wizard | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v970 | Awaiting reporter confirmation |
-| [#404](https://github.com/silkyclouds/pmda-tracker/issues/404) | Misleading explanation for "Free web search" | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#468](https://github.com/silkyclouds/pmda-tracker/issues/468) | ERROR:  relation "files_release_expectations" does not exist at character 22 | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#429](https://github.com/silkyclouds/pmda-tracker/issues/429) | Files index counts unreadable (PostgreSQL connection unavailable) | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1000 | Awaiting reporter confirmation |
+| [#428](https://github.com/silkyclouds/pmda-tracker/issues/428) | Improve the layout of the "editions" view | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#427](https://github.com/silkyclouds/pmda-tracker/issues/427) | Looking at incompletes in my inbox, pmda claims its missing the year but that is wrong | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#426](https://github.com/silkyclouds/pmda-tracker/issues/426) | Issues with multi-disk releases | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1000 | Awaiting reporter confirmation |
+| [#425](https://github.com/silkyclouds/pmda-tracker/issues/425) | Inbox. How do "albums are no longer on disk" happen? | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1000 | Awaiting reporter confirmation |
+| [#424](https://github.com/silkyclouds/pmda-tracker/issues/424) | What exactly does a scan failure mean? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#423](https://github.com/silkyclouds/pmda-tracker/issues/423) | Resume and transfer playback between devices | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#422](https://github.com/silkyclouds/pmda-tracker/issues/422) | What does the dupes verdict of "length not recorded" mean? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#421](https://github.com/silkyclouds/pmda-tracker/issues/421) | Got a dupe I cannot quarantine as pmda says: "both sides of the pair point at the same folder" | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#420](https://github.com/silkyclouds/pmda-tracker/issues/420) | Inbox reports: provider_id_mismatch | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1000 | Awaiting reporter confirmation |
+| [#419](https://github.com/silkyclouds/pmda-tracker/issues/419) | How to deal with strict_match_missing in my inbox? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#418](https://github.com/silkyclouds/pmda-tracker/issues/418) | Every browser refresh, triggers the 5 steps onboarding wizard again | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#417](https://github.com/silkyclouds/pmda-tracker/issues/417) | Question about tracks/albums inside inbox marked as damaged | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1000 | Awaiting reporter confirmation |
+| [#416](https://github.com/silkyclouds/pmda-tracker/issues/416) | Please explain "An upgrade request only ever takes a lossless copy." | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#404](https://github.com/silkyclouds/pmda-tracker/issues/404) | Misleading explanation for "Free web search" | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v971 | Awaiting reporter confirmation |
 | [#403](https://github.com/silkyclouds/pmda-tracker/issues/403) | Album folders whose names end in whitespace are silently dropped by the scan pipeline | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#392](https://github.com/silkyclouds/pmda-tracker/issues/392) | Retire the disk-aware power saver, and stop shipping a maintainer's own paths | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#387](https://github.com/silkyclouds/pmda-tracker/issues/387) | An index rebuild and the tag-trust materialization deadlock each other, and the rebuild loses… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#385](https://github.com/silkyclouds/pmda-tracker/issues/385) | The intake has no screen: the albums that need a person are the ones no page lists | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#384](https://github.com/silkyclouds/pmda-tracker/issues/384) | The tag-trust drain can be narrowed to a folder that is not the intake, and nothing says so | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#383](https://github.com/silkyclouds/pmda-tracker/issues/383) | Re-matching one album refuses every album that was never verified — where retrying is the onl… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#382](https://github.com/silkyclouds/pmda-tracker/issues/382) | A grid of cover art blanks itself permanently when the server is busy | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#381](https://github.com/silkyclouds/pmda-tracker/issues/381) | An intake root can be indexed as an album, and poisons every pass that walks the intake | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#380](https://github.com/silkyclouds/pmda-tracker/issues/380) | A decoder failure is reported as "this album has no tags" | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#379](https://github.com/silkyclouds/pmda-tracker/issues/379) | Duplicates users expected but PMDA did not report | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#378](https://github.com/silkyclouds/pmda-tracker/issues/378) | Choosing an output is a radio button, so a second speaker replaces the first instead of joini… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#376](https://github.com/silkyclouds/pmda-tracker/issues/376) | A 16 GB MusicBrainz mirror reads as a requirement when it is only a speed-up | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -358,33 +404,33 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#360](https://github.com/silkyclouds/pmda-tracker/issues/360) | The app does not move: a motion pass for the next iOS/Android build | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#357](https://github.com/silkyclouds/pmda-tracker/issues/357) | The trash had no door: the only permanent delete was unreachable from anything that fills it | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#354](https://github.com/silkyclouds/pmda-tracker/issues/354) | One imprint becomes several label profiles, and the one the page serves is the poorest of them | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#353](https://github.com/silkyclouds/pmda-tracker/issues/353) | A small share of album folder paths are stored as their own hex dump, and every feature that … | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#335](https://github.com/silkyclouds/pmda-tracker/issues/335) | "Move to quarantine" button not actionable | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#327](https://github.com/silkyclouds/pmda-tracker/issues/327) | Android: 12 testers for 14 continuous days before the app can leave closed testing | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#326](https://github.com/silkyclouds/pmda-tracker/issues/326) | Play to another PMDA client: satellites, remote control, and what "in sync" is allowed to mean | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#322](https://github.com/silkyclouds/pmda-tracker/issues/322) | Recommendations stop at the edge of the library | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#317](https://github.com/silkyclouds/pmda-tracker/issues/317) | Switching to managed mode has no path that adopts an already-organised library | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#312](https://github.com/silkyclouds/pmda-tracker/issues/312) | 237 settings, 107 with no control, 17 in two places at once | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v755 | Awaiting reporter confirmation |
 | [#305](https://github.com/silkyclouds/pmda-tracker/issues/305) | General user reports (unclassified) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#288](https://github.com/silkyclouds/pmda-tracker/issues/288) | Work titles are filed as artists, and the conservative repair leaves a residue | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#287](https://github.com/silkyclouds/pmda-tracker/issues/287) | Artist identity: the same artist under several rows, and no campaign to group them | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#286](https://github.com/silkyclouds/pmda-tracker/issues/286) | Classical, end to end: canonical composers, work catalogues, roles, sub-genres — plus the ing… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#285](https://github.com/silkyclouds/pmda-tracker/issues/285) | Artist identity: one artist, one name — stop inventing artists by splitting joint credits | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#284](https://github.com/silkyclouds/pmda-tracker/issues/284) | An always-on Opus mirror of the library, so playback starts before the array wakes | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#277](https://github.com/silkyclouds/pmda-tracker/issues/277) | Home: a label spotlight should say what the label puts out | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v750 | Awaiting reporter confirmation |
-| [#248](https://github.com/silkyclouds/pmda-tracker/issues/248) | Any plans to allow us to run the pmda container as non-root? | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v964 | Awaiting reporter confirmation |
 | [#247](https://github.com/silkyclouds/pmda-tracker/issues/247) | Any plans for adding OIDC auth or at least allow users to create passkeys? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#246](https://github.com/silkyclouds/pmda-tracker/issues/246) | If I move music out of the library, will pmda notice and correct its library size shown under… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v830 | Awaiting reporter confirmation |
 | [#237](https://github.com/silkyclouds/pmda-tracker/issues/237) | Folder-level numbering correction: three attempts withdrawn, and the specification for a corr… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#193](https://github.com/silkyclouds/pmda-tracker/issues/193) | Incompletes accuracy and true library numbers: consolidated thread | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#192](https://github.com/silkyclouds/pmda-tracker/issues/192) | Duplicates accuracy on real installs: consolidated thread | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#189](https://github.com/silkyclouds/pmda-tracker/issues/189) | Duplicate verdicts users contest (false positives) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#188](https://github.com/silkyclouds/pmda-tracker/issues/188) | MusicBrainz mirror setup failures | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#187](https://github.com/silkyclouds/pmda-tracker/issues/187) | Support drops: attach your PMDA export here | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#169](https://github.com/silkyclouds/pmda-tracker/issues/169) | Artist/album mismatch reviews offer no way to resolve them | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v420 | Awaiting reporter confirmation |
-| [#168](https://github.com/silkyclouds/pmda-tracker/issues/168) | "Why flagged" shows one reason while the row shows another | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v544 | Awaiting reporter confirmation |
-| [#134](https://github.com/silkyclouds/pmda-tracker/issues/134) | Resume granularity is per-artist, so a 9,382-album Various Artists bucket restarts from zero … | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v595 | Awaiting reporter confirmation |
-| [#409](https://github.com/silkyclouds/pmda-tracker/issues/409) | Can we have some documentation on this new "inbox" menu which suddenly appeared in pmda please? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
+| [#461](https://github.com/silkyclouds/pmda-tracker/issues/461) | Nothing checks the inbox end to end against real releases in the situations it meets | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#457](https://github.com/silkyclouds/pmda-tracker/issues/457) | Lookup timeouts and unavailable database connections fill the log with tracebacks and fail re… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#415](https://github.com/silkyclouds/pmda-tracker/issues/415) | What does "Repair damaged albums without asking" do? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#414](https://github.com/silkyclouds/pmda-tracker/issues/414) | The concert map shows OpenStreetMap's 403 tiles: tiles must come from PMDA itself | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v972 | Shipped & closed — reopen welcome |
+| [#413](https://github.com/silkyclouds/pmda-tracker/issues/413) | Subsonic or rather OpenSubsonic compatibility? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v986 | Shipped & closed — reopen welcome |
+| [#412](https://github.com/silkyclouds/pmda-tracker/issues/412) | WHen generating an app password, the button "copy the app password" copies the text "the app … | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v986 | Shipped & closed — reopen welcome |
+| [#411](https://github.com/silkyclouds/pmda-tracker/issues/411) | Email settings not getting saved | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v971 | Shipped & closed — reopen welcome |
+| [#410](https://github.com/silkyclouds/pmda-tracker/issues/410) | API Error: 409 when saving the onboarding wizard | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v970 | Shipped & closed — reopen welcome |
+| [#409](https://github.com/silkyclouds/pmda-tracker/issues/409) | Can we have some documentation on this new "inbox" menu which suddenly appeared in pmda please? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#408](https://github.com/silkyclouds/pmda-tracker/issues/408) | How to control the scheduler? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v970 | Shipped & closed — reopen welcome |
 | [#407](https://github.com/silkyclouds/pmda-tracker/issues/407) | Can't find where to set FFprobe pool despite the helper text saying "Set under Concurrency, b… | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v945 | Shipped & closed — reopen welcome |
 | [#406](https://github.com/silkyclouds/pmda-tracker/issues/406) | Acquisition sources ON by default despite not being configured. | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v945 | Shipped & closed — reopen welcome |
@@ -404,6 +450,11 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#389](https://github.com/silkyclouds/pmda-tracker/issues/389) | Tags written for an inbox album are never adopted by the index, so it can never leave | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#388](https://github.com/silkyclouds/pmda-tracker/issues/388) | The inbox watcher is silently deaf on FUSE and network filesystems | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#386](https://github.com/silkyclouds/pmda-tracker/issues/386) | Tags written into a file are not adopted by the index, even after a forced filesystem rebuild | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
+| [#385](https://github.com/silkyclouds/pmda-tracker/issues/385) | The intake has no screen: the albums that need a person are the ones no page lists | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
+| [#384](https://github.com/silkyclouds/pmda-tracker/issues/384) | The tag-trust drain can be narrowed to a folder that is not the intake, and nothing says so | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
+| [#383](https://github.com/silkyclouds/pmda-tracker/issues/383) | Re-matching one album refuses every album that was never verified — where retrying is the onl… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
+| [#382](https://github.com/silkyclouds/pmda-tracker/issues/382) | A grid of cover art blanks itself permanently when the server is busy | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
+| [#380](https://github.com/silkyclouds/pmda-tracker/issues/380) | A decoder failure is reported as "this album has no tags" | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#377](https://github.com/silkyclouds/pmda-tracker/issues/377) | Saving the trash folder is refused: three settings the interface offers and the server drops | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#373](https://github.com/silkyclouds/pmda-tracker/issues/373) | The assistant answers a request to hear music with prose you cannot press play on | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.8 | Shipped & closed — reopen welcome |
 | [#372](https://github.com/silkyclouds/pmda-tracker/issues/372) | The home can only be asked in genre chips, and a mood is a sentence | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.8 | Shipped & closed — reopen welcome |
@@ -411,6 +462,7 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#359](https://github.com/silkyclouds/pmda-tracker/issues/359) | Pressing Play did nothing at all, for a whole session, and nothing said so | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.8 | Shipped & closed — reopen welcome |
 | [#358](https://github.com/silkyclouds/pmda-tracker/issues/358) | A failed track offers only Retry, which is the least likely thing to help | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | 1.0.8 | Shipped & closed — reopen welcome |
 | [#356](https://github.com/silkyclouds/pmda-tracker/issues/356) | An empty index made PMDA rebuild the library on every page view | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v962 | Shipped & closed — reopen welcome |
+| [#353](https://github.com/silkyclouds/pmda-tracker/issues/353) | A small share of album folder paths are stored as their own hex dump, and every feature that … | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#351](https://github.com/silkyclouds/pmda-tracker/issues/351) | A rebuild deletes the listening history, the playlists' contents and the ratings | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v766 | Shipped & closed — reopen welcome |
 | [#341](https://github.com/silkyclouds/pmda-tracker/issues/341) | A query reads a table that does not exist, and an unreadable-folder warning names no folder | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v756 | Shipped & closed — reopen welcome |
 | [#340](https://github.com/silkyclouds/pmda-tracker/issues/340) | A correct API key cannot be re-saved, so a failing provider offers nothing to try | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -436,6 +488,7 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#315](https://github.com/silkyclouds/pmda-tracker/issues/315) | Folders and file types PMDA must never touch, with @eaDir known out of the box | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v741 | Shipped & closed — reopen welcome |
 | [#314](https://github.com/silkyclouds/pmda-tracker/issues/314) | The player named one track and played another | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v734 | Shipped & closed — reopen welcome |
 | [#313](https://github.com/silkyclouds/pmda-tracker/issues/313) | Gapless was armed inside a 120 ms window by an event that fires every 266 ms | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v727 | Shipped & closed — reopen welcome |
+| [#312](https://github.com/silkyclouds/pmda-tracker/issues/312) | 237 settings, 107 with no control, 17 in two places at once | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v755 | Shipped & closed — reopen welcome |
 | [#311](https://github.com/silkyclouds/pmda-tracker/issues/311) | A shared link led to an image, and its player said nothing at all | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v732 | Shipped & closed — reopen welcome |
 | [#310](https://github.com/silkyclouds/pmda-tracker/issues/310) | A refused save deleted the edit it was refusing | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v726 | Shipped & closed — reopen welcome |
 | [#309](https://github.com/silkyclouds/pmda-tracker/issues/309) | A public share link is built from the sharer's own address, so a LAN address leaves the building | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v743 | Shipped & closed — reopen welcome |
@@ -457,6 +510,7 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#280](https://github.com/silkyclouds/pmda-tracker/issues/280) | A boot migration could freeze the whole instance, and the home reported an empty library | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#279](https://github.com/silkyclouds/pmda-tracker/issues/279) | Home: a reshuffle control on every spotlight | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v602 | Shipped & closed — reopen welcome |
 | [#278](https://github.com/silkyclouds/pmda-tracker/issues/278) | Album page: two human sentences instead of six stacked blocks | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
+| [#277](https://github.com/silkyclouds/pmda-tracker/issues/277) | Home: a label spotlight should say what the label puts out | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v750 | Shipped & closed — reopen welcome |
 | [#276](https://github.com/silkyclouds/pmda-tracker/issues/276) | Album page: two thumbs in the action bar, and two sections that cost vertical space for little | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#275](https://github.com/silkyclouds/pmda-tracker/issues/275) | The radar said 491 liked artists when the owner had liked 1,211 | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#274](https://github.com/silkyclouds/pmda-tracker/issues/274) | A tile's own menu was clipped inside the sleeve, and badge values had no size of their own | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
@@ -468,6 +522,8 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#251](https://github.com/silkyclouds/pmda-tracker/issues/251) | Confusing scan output | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v744 | Shipped & closed — reopen welcome |
 | [#250](https://github.com/silkyclouds/pmda-tracker/issues/250) | General findings from pmda logs | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v955 | Shipped & closed — reopen welcome |
 | [#249](https://github.com/silkyclouds/pmda-tracker/issues/249) | Pressing ""validate keys" marked all API keys with "issues" | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v830 | Shipped & closed — reopen welcome |
+| [#248](https://github.com/silkyclouds/pmda-tracker/issues/248) | Any plans to allow us to run the pmda container as non-root? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v964 | Shipped & closed — reopen welcome |
+| [#246](https://github.com/silkyclouds/pmda-tracker/issues/246) | If I move music out of the library, will pmda notice and correct its library size shown under… | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v830 | Shipped & closed — reopen welcome |
 | [#245](https://github.com/silkyclouds/pmda-tracker/issues/245) | We have the MBID and were guessing the Wikipedia title | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#244](https://github.com/silkyclouds/pmda-tracker/issues/244) | Album pages: show every critic, not the one number we kept | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | — | Shipped & closed — reopen welcome |
 | [#243](https://github.com/silkyclouds/pmda-tracker/issues/243) | The home renders covers where it holds an edition: prose, captions and scores were being disc… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v753 | Shipped & closed — reopen welcome |
@@ -487,12 +543,15 @@ _351 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#176](https://github.com/silkyclouds/pmda-tracker/issues/176) | Issue with a duplicate report reporting two different albums as duplicates | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v474 | Shipped & closed — reopen welcome |
 | [#171](https://github.com/silkyclouds/pmda-tracker/issues/171) | Composition: add a sample-rate filter alongside the bitrate buckets | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v507 | Shipped & closed — reopen welcome |
 | [#170](https://github.com/silkyclouds/pmda-tracker/issues/170) | Incompletes review: say what each button does, and show the album facts in the Detail modal | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v547 | Shipped & closed — reopen welcome |
+| [#169](https://github.com/silkyclouds/pmda-tracker/issues/169) | Artist/album mismatch reviews offer no way to resolve them | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v420 | Shipped & closed — reopen welcome |
+| [#168](https://github.com/silkyclouds/pmda-tracker/issues/168) | "Why flagged" shows one reason while the row shows another | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v514 | Shipped & closed — reopen welcome |
 | [#167](https://github.com/silkyclouds/pmda-tracker/issues/167) | A review row links to an album page that answers "no longer in your library" | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v744 | Shipped & closed — reopen welcome |
 | [#155](https://github.com/silkyclouds/pmda-tracker/issues/155) | enhance the "composition" analysis | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v412 | Shipped & closed — reopen welcome |
 | [#153](https://github.com/silkyclouds/pmda-tracker/issues/153) | Manually starting background enrichment process from tools menu leads to API Error: 409 CONFLICT | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#152](https://github.com/silkyclouds/pmda-tracker/issues/152) | How to handle "incompletes" without a pmda handbook? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v410 | Shipped & closed — reopen welcome |
 | [#151](https://github.com/silkyclouds/pmda-tracker/issues/151) | Enrichment vocabulary is undocumented | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v396 | Shipped & closed — reopen welcome |
 | [#135](https://github.com/silkyclouds/pmda-tracker/issues/135) | MusicBrainz local still reports timeouts while the mirror answers the same query in 30 ms | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v387 | Shipped & closed — reopen welcome |
+| [#134](https://github.com/silkyclouds/pmda-tracker/issues/134) | Resume granularity is per-artist, so a 9,382-album Various Artists bucket restarts from zero … | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v595 | Shipped & closed — reopen welcome |
 | [#133](https://github.com/silkyclouds/pmda-tracker/issues/133) | Segfault located: a werkzeug request thread dies in the auth guard, and runtime binding has n… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v367 | Shipped & closed — reopen welcome |
 | [#132](https://github.com/silkyclouds/pmda-tracker/issues/132) | A resumed scan restores its plan, reports the plan size as albums scanned, and identifies zer… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v366 | Shipped & closed — reopen welcome |
 | [#131](https://github.com/silkyclouds/pmda-tracker/issues/131) | Export moved the entire intake root (3.8 TB) into Music_matched as a single album on tag-trus… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v362 | Shipped & closed — reopen welcome |
