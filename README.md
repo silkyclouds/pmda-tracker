@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_411 fixed · 58 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_412 fixed · 57 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 59 report(s), 1 open</summary>
@@ -372,7 +372,7 @@ _411 fixed · 58 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 206 report(s), 43 open</summary>
+<summary><b>Other</b> — 206 report(s), 42 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
@@ -383,7 +383,6 @@ _411 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#423](https://github.com/silkyclouds/pmda-tracker/issues/423) | Resume and transfer playback between devices | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#422](https://github.com/silkyclouds/pmda-tracker/issues/422) | What does the dupes verdict of "length not recorded" mean? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#421](https://github.com/silkyclouds/pmda-tracker/issues/421) | Got a dupe I cannot quarantine as pmda says: "both sides of the pair point at the same folder" | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#420](https://github.com/silkyclouds/pmda-tracker/issues/420) | Inbox reports: provider_id_mismatch | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1001 | Awaiting reporter confirmation |
 | [#419](https://github.com/silkyclouds/pmda-tracker/issues/419) | How to deal with strict_match_missing in my inbox? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#418](https://github.com/silkyclouds/pmda-tracker/issues/418) | Every browser refresh, triggers the 5 steps onboarding wizard again | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#417](https://github.com/silkyclouds/pmda-tracker/issues/417) | Question about tracks/albums inside inbox marked as damaged | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1000 | Awaiting reporter confirmation |
@@ -425,6 +424,7 @@ _411 fixed · 58 open — regenerated automatically. FIXED names the version tha
 | [#429](https://github.com/silkyclouds/pmda-tracker/issues/429) | Files index counts unreadable (PostgreSQL connection unavailable) | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#426](https://github.com/silkyclouds/pmda-tracker/issues/426) | Issues with multi-disk releases | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1001 | Shipped & closed — reopen welcome |
 | [#424](https://github.com/silkyclouds/pmda-tracker/issues/424) | What exactly does a scan failure mean? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1001 | Shipped & closed — reopen welcome |
+| [#420](https://github.com/silkyclouds/pmda-tracker/issues/420) | Inbox reports: provider_id_mismatch | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1001 | Shipped & closed — reopen welcome |
 | [#415](https://github.com/silkyclouds/pmda-tracker/issues/415) | What does "Repair damaged albums without asking" do? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
 | [#414](https://github.com/silkyclouds/pmda-tracker/issues/414) | The concert map shows OpenStreetMap's 403 tiles: tiles must come from PMDA itself | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v972 | Shipped & closed — reopen welcome |
 | [#413](https://github.com/silkyclouds/pmda-tracker/issues/413) | Subsonic or rather OpenSubsonic compatibility? | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v986 | Shipped & closed — reopen welcome |
