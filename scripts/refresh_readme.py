@@ -132,7 +132,9 @@ ENGINEERING_TITLE = re.compile(r"^\[scanner\]")
 VERSION_IN_COMMENT = re.compile(
     r"(?:shipped|ships|fixed|landed|released|lands)\s+(?:in|on|with)\s+v(\d{2,5})\b"
     r"|what\s+(?:changes|changed)\s+in\s+v(\d{2,5})\b"
-    r"|\b(?:since|as\s+of|from)\s+v(\d{2,5})\b",
+    r"|\b(?:since|as\s+of|from)\s+v(\d{2,5})\b"
+    # "v1006 is out now, and it changes ..." / "v1006 (out now): ..."
+    r"|\bv(\d{2,5})\s+(?:is\s+out\b|\(out\s+now\))",
     re.IGNORECASE,
 )
 
