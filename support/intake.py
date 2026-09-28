@@ -28,7 +28,10 @@ import re
 import sys
 import urllib.request
 
-REPO = os.getenv("GITHUB_REPOSITORY", "silkyclouds/pmda-tracker")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from scrub import scrub_bundle_bytes  # noqa: E402
+
+REPO =os.getenv("GITHUB_REPOSITORY", "silkyclouds/pmda-tracker")
 TOKEN = os.getenv("GITHUB_TOKEN", "")
 DROP_ISSUE = int(os.getenv("SUPPORT_DROP_ISSUE", "187"))
 STATE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
@@ -317,8 +320,18 @@ def _discord(path: str, method: str = "GET", body: dict | None = None):
 
 
 def _commit_bundle(msg_id: str, data: bytes) -> str:
+    """Commit a bundle to this public repository, scrubbed first.
+
+    PMDA up to v1004 wrote the first four characters of every secret into the
+    startup config dump that each bundle's log tail carries, and those clients
+    keep sending. This is the one door through which a bundle enters the repo,
+    so the scrub lives here: no character of a secret is committed, whatever
+    build sent it. If the scrub cannot vouch for the result, nothing is
+    committed (scrub.SecretSurvived, whose message carries no value).
+    """
     import base64 as _b64
 
+    data = scrub_bundle_bytes(data)
     path = f"support/bundles/{msg_id}.json"
     _api(
         f"/repos/{REPO}/contents/{path}",

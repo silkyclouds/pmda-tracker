@@ -28,6 +28,11 @@ jobs:
       # mis-typed report is buried rather than lost. Gate the run on it.
       - name: Check the classifier
         run: python3 support/test_classify.py
+      # This repository is public and old PMDA clients send bundles whose log
+      # tail shows the first characters of every secret. The intake scrubs a
+      # bundle before committing it; if the scrub is broken, nothing runs.
+      - name: Check the secret scrub
+        run: python3 support/test_scrub.py
       - name: Run intake
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
