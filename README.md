@@ -26,13 +26,14 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_428 fixed · 63 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_428 fixed · 66 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
-<summary><b>UI / UX</b> — 71 report(s), 10 open</summary>
+<summary><b>UI / UX</b> — 72 report(s), 11 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#494](https://github.com/silkyclouds/pmda-tracker/issues/494) | Statistics says the set-aside folder holds what PMDA moved out of the library | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#491](https://github.com/silkyclouds/pmda-tracker/issues/491) | An album still in the inbox is listed on its artist's page, while Albums and search leave it out | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
 | [#489](https://github.com/silkyclouds/pmda-tracker/issues/489) | A report about a page can only be sent from Settings, and no page says how | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#488](https://github.com/silkyclouds/pmda-tracker/issues/488) | After a search finds a release with the same tracks, the inbox fix dialog still opens on the … | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
@@ -108,10 +109,11 @@ _428 fixed · 63 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Scanner & pipeline</b> — 62 report(s), 2 open</summary>
+<summary><b>Scanner & pipeline</b> — 63 report(s), 3 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#495](https://github.com/silkyclouds/pmda-tracker/issues/495) | A library copy that loses to an arriving album is set aside without a line in the move record | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#490](https://github.com/silkyclouds/pmda-tracker/issues/490) | A scan that resumes from its saved plan numbers "NN - Title" files by their position | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
 | [#476](https://github.com/silkyclouds/pmda-tracker/issues/476) | Weird numbering of tracks when fixing an album from the inbox | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
 | [#450](https://github.com/silkyclouds/pmda-tracker/issues/450) | A changed-only scan for a few inbox albums takes hours | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
@@ -178,10 +180,11 @@ _428 fixed · 63 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Duplicates</b> — 14 report(s), 4 open</summary>
+<summary><b>Duplicates</b> — 15 report(s), 5 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#493](https://github.com/silkyclouds/pmda-tracker/issues/493) | With "Flag them for review", an inbox copy of an album the library holds is still set aside w… | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#483](https://github.com/silkyclouds/pmda-tracker/issues/483) | The duplicate move plan refuses pairs the card calls exact: it re-checks with album totals th… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
 | [#482](https://github.com/silkyclouds/pmda-tracker/issues/482) | The duplicate card says a duration was not measured, and counts identical track lengths as di… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
 | [#447](https://github.com/silkyclouds/pmda-tracker/issues/447) | A better-sounding arrival without a cover loses to a lesser library copy that has one | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
