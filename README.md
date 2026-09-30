@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_432 fixed · 68 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_433 fixed · 69 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 69 report(s), 8 open</summary>
@@ -106,10 +106,11 @@ _432 fixed · 68 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Scanner & pipeline</b> — 62 report(s), 2 open</summary>
+<summary><b>Scanner & pipeline</b> — 63 report(s), 3 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#501](https://github.com/silkyclouds/pmda-tracker/issues/501) | PMDA seems to pause recognizing albums with gaps and parks them in the inbox | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#495](https://github.com/silkyclouds/pmda-tracker/issues/495) | A library copy that loses to an arriving album is set aside without a line in the move record | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#490](https://github.com/silkyclouds/pmda-tracker/issues/490) | A scan that resumes from its saved plan numbers "NN - Title" files by their position | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | — | Awaiting reporter confirmation |
 | [#450](https://github.com/silkyclouds/pmda-tracker/issues/450) | A changed-only scan for a few inbox albums takes hours | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1000 | Shipped & closed — reopen welcome |
@@ -176,10 +177,11 @@ _432 fixed · 68 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Duplicates</b> — 15 report(s), 5 open</summary>
+<summary><b>Duplicates</b> — 16 report(s), 6 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#502](https://github.com/silkyclouds/pmda-tracker/issues/502) | How does "merge" of two folders work? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#493](https://github.com/silkyclouds/pmda-tracker/issues/493) | With "Flag them for review", an inbox copy of an album the library holds is still set aside w… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1010 | Awaiting reporter confirmation |
 | [#483](https://github.com/silkyclouds/pmda-tracker/issues/483) | The duplicate move plan refuses pairs the card calls exact: it re-checks with album totals th… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1010 | Awaiting reporter confirmation |
 | [#482](https://github.com/silkyclouds/pmda-tracker/issues/482) | The duplicate card says a duration was not measured, and counts identical track lengths as di… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
@@ -390,14 +392,13 @@ _432 fixed · 68 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 219 report(s), 40 open</summary>
+<summary><b>Other</b> — 219 report(s), 39 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#501](https://github.com/silkyclouds/pmda-tracker/issues/501) | PMDA seems to pause recognizing albums with gaps and parks them in the inbox | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#500](https://github.com/silkyclouds/pmda-tracker/issues/500) | Duplicate acoustid fp on many files: "acoustid fingerprint" and "acoustid_fingerprint" | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1010 | Awaiting reporter confirmation |
+| [#503](https://github.com/silkyclouds/pmda-tracker/issues/503) | Please fix the current messy editions page | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#499](https://github.com/silkyclouds/pmda-tracker/issues/499) | Decided to give up on an album, moved it to trash and now pmda claims it has no idea where it… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1010 | Awaiting reporter confirmation |
-| [#498](https://github.com/silkyclouds/pmda-tracker/issues/498) | How to fix an album match were I have all tracks in oen folder but musicbrainz has them filed… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1010 | Awaiting reporter confirmation |
+| [#498](https://github.com/silkyclouds/pmda-tracker/issues/498) | How to fix an album match were I have all tracks in oen folder but musicbrainz has them filed… | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#497](https://github.com/silkyclouds/pmda-tracker/issues/497) | How do we "proceed" with albums we moved into quarantine? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#496](https://github.com/silkyclouds/pmda-tracker/issues/496) | Album in inbox incorrectly reported PMDA has a row for this album and the folder holds no aud… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1010 | Awaiting reporter confirmation |
 | [#487](https://github.com/silkyclouds/pmda-tracker/issues/487) | Another issue with the wording on the statistics page | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -434,6 +435,7 @@ _432 fixed · 68 open — regenerated automatically. FIXED names the version tha
 | [#189](https://github.com/silkyclouds/pmda-tracker/issues/189) | Duplicate verdicts users contest (false positives) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#188](https://github.com/silkyclouds/pmda-tracker/issues/188) | MusicBrainz mirror setup failures | github-actions | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1010 | Awaiting reporter confirmation |
 | [#187](https://github.com/silkyclouds/pmda-tracker/issues/187) | Support drops: attach your PMDA export here | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#500](https://github.com/silkyclouds/pmda-tracker/issues/500) | Duplicate acoustid fp on many files: "acoustid fingerprint" and "acoustid_fingerprint" | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1010 | Shipped & closed — reopen welcome |
 | [#476](https://github.com/silkyclouds/pmda-tracker/issues/476) | Weird numbering of tracks when fixing an album from the inbox | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1006 | Shipped & closed — reopen welcome |
 | [#475](https://github.com/silkyclouds/pmda-tracker/issues/475) | Please fix the messy display of the inbox page | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1006 | Shipped & closed — reopen welcome |
 | [#474](https://github.com/silkyclouds/pmda-tracker/issues/474) | Weird issue with the trash: when restoring the restore goes to the trash again | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1006 | Shipped & closed — reopen welcome |
