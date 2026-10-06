@@ -26,13 +26,16 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_490 fixed · 65 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_490 fixed · 78 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
-<summary><b>UI / UX</b> — 86 report(s), 6 open</summary>
+<summary><b>UI / UX</b> — 89 report(s), 9 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#567](https://github.com/silkyclouds/pmda-tracker/issues/567) | The preview of a lot keeps its start buttons disabled for minutes after a restart | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#561](https://github.com/silkyclouds/pmda-tracker/issues/561) | A single click can start a treatment: every treatment should go through a confirmation window | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#557](https://github.com/silkyclouds/pmda-tracker/issues/557) | A big treatment shows no sign of life, cannot be followed, and its start button is at the bot… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1048 | Awaiting reporter confirmation |
 | [#519](https://github.com/silkyclouds/pmda-tracker/issues/519) | For a disc of a multi-disc release, the source link opens the whole release and nothing says … | debtdeflation | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#506](https://github.com/silkyclouds/pmda-tracker/issues/506) | Editions page: borders, the lengths line and which column it belongs to | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#481](https://github.com/silkyclouds/pmda-tracker/issues/481) | An album that stays in the inbox can drop off the Inbox page, and its album page does not say… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
@@ -199,10 +202,12 @@ _490 fixed · 65 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Duplicates</b> — 23 report(s), 4 open</summary>
+<summary><b>Duplicates</b> — 25 report(s), 6 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#566](https://github.com/silkyclouds/pmda-tracker/issues/566) | The page read to find a review could also confirm or contradict the match and the edition PMD… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#558](https://github.com/silkyclouds/pmda-tracker/issues/558) | A record whose weaker tracks were asked for again is reported as left as it was, and is asked… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1048 | Awaiting reporter confirmation |
 | [#502](https://github.com/silkyclouds/pmda-tracker/issues/502) | How does "merge" of two folders work? | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1041 | Awaiting reporter confirmation |
 | [#483](https://github.com/silkyclouds/pmda-tracker/issues/483) | The duplicate move plan refuses pairs the card calls exact: it re-checks with album totals th… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1041 | Awaiting reporter confirmation |
 | [#482](https://github.com/silkyclouds/pmda-tracker/issues/482) | The duplicate card says a duration was not measured, and counts identical track lengths as di… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1041 | Awaiting reporter confirmation |
@@ -230,10 +235,13 @@ _490 fixed · 65 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Metadata & matching</b> — 44 report(s), 3 open</summary>
+<summary><b>Metadata & matching</b> — 47 report(s), 6 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#565](https://github.com/silkyclouds/pmda-tracker/issues/565) | The review shown first is the longest, not the best sourced, and paraphrased reviews are neve… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#564](https://github.com/silkyclouds/pmda-tracker/issues/564) | A biography or a label description cannot carry its author, its site and its link | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#560](https://github.com/silkyclouds/pmda-tracker/issues/560) | A review shows no author, no site and no link to the page where it was published | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1048 | Awaiting reporter confirmation |
 | [#518](https://github.com/silkyclouds/pmda-tracker/issues/518) | A disc of a box set ripped alone is matched against the whole set, and cannot take its own cr… | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1021 | Awaiting reporter confirmation |
 | [#486](https://github.com/silkyclouds/pmda-tracker/issues/486) | An album held twice is asked its edition on the copy with no MusicBrainz id while the other c… | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1006 | Awaiting reporter confirmation |
 | [#362](https://github.com/silkyclouds/pmda-tracker/issues/362) | An artist's identity key can be a whole credit line, so several composers share one row | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -282,10 +290,11 @@ _490 fixed · 65 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Mobile apps</b> — 20 report(s), 7 open</summary>
+<summary><b>Mobile apps</b> — 21 report(s), 8 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#568](https://github.com/silkyclouds/pmda-tracker/issues/568) | The companion apps start treatments without a confirmation window | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#467](https://github.com/silkyclouds/pmda-tracker/issues/467) | With a VPN on, "Download over Wi-Fi only" holds downloads even on Wi-Fi | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#466](https://github.com/silkyclouds/pmda-tracker/issues/466) | A link opens its page behind the open full player | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#465](https://github.com/silkyclouds/pmda-tracker/issues/465) | The full player once could not be closed after an appearance change and a link | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -310,10 +319,12 @@ _490 fixed · 65 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Player & playback</b> — 5 report(s), 2 open</summary>
+<summary><b>Player & playback</b> — 7 report(s), 4 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#569](https://github.com/silkyclouds/pmda-tracker/issues/569) | The Opus mirror retries and counts as failures the tracks whose source file is no longer there | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#559](https://github.com/silkyclouds/pmda-tracker/issues/559) | The Opus mirror stops by itself after a long batch while the page says it is running | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1048 | Awaiting reporter confirmation |
 | [#551](https://github.com/silkyclouds/pmda-tracker/issues/551) | The Opus mirror leaves lossy files out, encodes at a variable bitrate, and carries no sleeves | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1047 | Awaiting reporter confirmation |
 | [#550](https://github.com/silkyclouds/pmda-tracker/issues/550) | The Opus mirror is written but no client plays it, so a track still starts from the array disk | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1044 | Awaiting reporter confirmation |
 | [#369](https://github.com/silkyclouds/pmda-tracker/issues/369) | A playback failure left no account of itself on either side | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1005 | Shipped & closed — reopen welcome |
@@ -322,11 +333,13 @@ _490 fixed · 65 open — regenerated automatically. FIXED names the version tha
 
 </details>
 
-<details>
-<summary><b>Providers & integrations</b> — 14 report(s), 0 open</summary>
+<details open>
+<summary><b>Providers & integrations</b> — 16 report(s), 2 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#563](https://github.com/silkyclouds/pmda-tracker/issues/563) | When a local model is connected, PMDA should use it first to find reviews, biographies and la… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#562](https://github.com/silkyclouds/pmda-tracker/issues/562) | Reviews, biographies and label descriptions can be found as the sites published them, by a sm… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#535](https://github.com/silkyclouds/pmda-tracker/issues/535) | Request missing tracks refuses a lossless album | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1036 | Shipped & closed — reopen welcome |
 | [#530](https://github.com/silkyclouds/pmda-tracker/issues/530) | Your requests has no figures, no sleeves and no way to search by hand | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1035 | Shipped & closed — reopen welcome |
 | [#478](https://github.com/silkyclouds/pmda-tracker/issues/478) | The inbox says MusicBrainz published no tracklist for a record whose release has one | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1006 | Shipped & closed — reopen welcome |
