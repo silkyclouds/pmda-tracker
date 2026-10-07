@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_504 fixed · 93 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_504 fixed · 94 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 93 report(s), 10 open</summary>
@@ -473,17 +473,18 @@ _504 fixed · 93 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Other</b> — 233 report(s), 40 open</summary>
+<summary><b>Other</b> — 234 report(s), 41 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#599](https://github.com/silkyclouds/pmda-tracker/issues/599) | Retrying a failed first import of the MusicBrainz mirror must start from a clean database | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#595](https://github.com/silkyclouds/pmda-tracker/issues/595) | Please adjust the way the paths are displayed in the dupes section when comparing dupes | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#594](https://github.com/silkyclouds/pmda-tracker/issues/594) | A thumb down: what a listener dislikes is learned and avoided | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#592](https://github.com/silkyclouds/pmda-tracker/issues/592) | Incomplete albums must live only in Incompletes, never in the Library | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#516](https://github.com/silkyclouds/pmda-tracker/issues/516) | Album has a dupe but not shown in dupes? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#515](https://github.com/silkyclouds/pmda-tracker/issues/515) | Editions page shows numbers which disagree | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1041 | Awaiting reporter confirmation |
 | [#514](https://github.com/silkyclouds/pmda-tracker/issues/514) | Folder naming template - the pieces behave erratically | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#513](https://github.com/silkyclouds/pmda-tracker/issues/513) | Need help understanding the "incompletes" numbers and the flow | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1041 | Awaiting reporter confirmation |
+| [#513](https://github.com/silkyclouds/pmda-tracker/issues/513) | Need help understanding the "incompletes" numbers and the flow | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1078 | Awaiting reporter confirmation |
 | [#512](https://github.com/silkyclouds/pmda-tracker/issues/512) | Inbox: difference between "write tags into files" and "add it without a match"? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#509](https://github.com/silkyclouds/pmda-tracker/issues/509) | Questions about "What PMDA wrote" submenu of the editions page | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#508](https://github.com/silkyclouds/pmda-tracker/issues/508) | An album page shows an extra letter before the title | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
