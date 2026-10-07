@@ -26,15 +26,14 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_501 fixed · 96 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_504 fixed · 93 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
-<summary><b>UI / UX</b> — 93 report(s), 11 open</summary>
+<summary><b>UI / UX</b> — 93 report(s), 10 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
 | [#590](https://github.com/silkyclouds/pmda-tracker/issues/590) | The AI agent returns to the web interface as a listening partner, on the instance's local model | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#579](https://github.com/silkyclouds/pmda-tracker/issues/579) | The Concerts page counts one venue per event and the assistant reads venue fields at the wron… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#567](https://github.com/silkyclouds/pmda-tracker/issues/567) | The preview of a lot keeps its start buttons disabled for minutes after a restart | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1050 | Awaiting reporter confirmation |
 | [#561](https://github.com/silkyclouds/pmda-tracker/issues/561) | A single click can start a treatment: every treatment should go through a confirmation window | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1049 | Awaiting reporter confirmation |
 | [#557](https://github.com/silkyclouds/pmda-tracker/issues/557) | A big treatment shows no sign of life, cannot be followed, and its start button is at the bot… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1048 | Awaiting reporter confirmation |
@@ -46,6 +45,7 @@ _501 fixed · 96 open — regenerated automatically. FIXED names the version tha
 | [#263](https://github.com/silkyclouds/pmda-tracker/issues/263) | Design port: the React layer now follows the boards, page by page | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#598](https://github.com/silkyclouds/pmda-tracker/issues/598) | The Enrichment page buried its summary under the model's decisions and did not say how each f… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1060 | Shipped & closed — reopen welcome |
 | [#585](https://github.com/silkyclouds/pmda-tracker/issues/585) | The web interface has no agent: it needs a panel with rich cards and visible steps | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1055 | Shipped & closed — reopen welcome |
+| [#579](https://github.com/silkyclouds/pmda-tracker/issues/579) | The Concerts page counts one venue per event and the assistant reads venue fields at the wron… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1076 | Shipped & closed — reopen welcome |
 | [#548](https://github.com/silkyclouds/pmda-tracker/issues/548) | The incompletes figure rises after every restart, with nothing said about why | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1043 | Shipped & closed — reopen welcome |
 | [#547](https://github.com/silkyclouds/pmda-tracker/issues/547) | The window before a bulk move does not say what a pair is, what a question changes, or which … | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1043 | Shipped & closed — reopen welcome |
 | [#545](https://github.com/silkyclouds/pmda-tracker/issues/545) | Sidebar: the theme switch is two words, the version hides under the player, the playlists gro… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1041 | Shipped & closed — reopen welcome |
@@ -347,15 +347,13 @@ _501 fixed · 96 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Providers & integrations</b> — 27 report(s), 7 open</summary>
+<summary><b>Providers & integrations</b> — 27 report(s), 5 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
 | [#582](https://github.com/silkyclouds/pmda-tracker/issues/582) | The local model could help beyond finding texts: duplicates, editions, the Inbox, concerts an… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#578](https://github.com/silkyclouds/pmda-tracker/issues/578) | A failed concert lookup is remembered as no dates for a week | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#577](https://github.com/silkyclouds/pmda-tracker/issues/577) | The notification that announces a concert is never sent | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#575](https://github.com/silkyclouds/pmda-tracker/issues/575) | Concert dates rest on three sources and miss tours that are announced but not yet dated | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#570](https://github.com/silkyclouds/pmda-tracker/issues/570) | A local model has no shared way to be asked about a case, to have its answer kept, shown and … | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1052 | Awaiting reporter confirmation |
+| [#570](https://github.com/silkyclouds/pmda-tracker/issues/570) | A local model has no shared way to be asked about a case, to have its answer kept, shown and … | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1076 | Awaiting reporter confirmation |
 | [#563](https://github.com/silkyclouds/pmda-tracker/issues/563) | When a local model is connected, PMDA should use it first to find reviews, biographies and la… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1050 | Awaiting reporter confirmation |
 | [#562](https://github.com/silkyclouds/pmda-tracker/issues/562) | Reviews, biographies and label descriptions can be found as the sites published them, by a sm… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1052 | Awaiting reporter confirmation |
 | [#597](https://github.com/silkyclouds/pmda-tracker/issues/597) | The search for published texts could store a page that was not about the record | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1060 | Shipped & closed — reopen welcome |
@@ -364,6 +362,8 @@ _501 fixed · 96 open — regenerated automatically. FIXED names the version tha
 | [#589](https://github.com/silkyclouds/pmda-tracker/issues/589) | Marking a concert as attended and following an artist are refused for accounts that are not a… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1055 | Shipped & closed — reopen welcome |
 | [#584](https://github.com/silkyclouds/pmda-tracker/issues/584) | The server cannot run a model with tools: the agent needs a loop it owns, on the local model | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1055 | Shipped & closed — reopen welcome |
 | [#583](https://github.com/silkyclouds/pmda-tracker/issues/583) | The AI agent has no safe, named set of tools scoped to the listener | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1055 | Shipped & closed — reopen welcome |
+| [#578](https://github.com/silkyclouds/pmda-tracker/issues/578) | A failed concert lookup is remembered as no dates for a week | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1076 | Shipped & closed — reopen welcome |
+| [#577](https://github.com/silkyclouds/pmda-tracker/issues/577) | The notification that announces a concert is never sent | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1076 | Shipped & closed — reopen welcome |
 | [#535](https://github.com/silkyclouds/pmda-tracker/issues/535) | Request missing tracks refuses a lossless album | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1036 | Shipped & closed — reopen welcome |
 | [#530](https://github.com/silkyclouds/pmda-tracker/issues/530) | Your requests has no figures, no sleeves and no way to search by hand | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1035 | Shipped & closed — reopen welcome |
 | [#478](https://github.com/silkyclouds/pmda-tracker/issues/478) | The inbox says MusicBrainz published no tracklist for a record whose release has one | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1006 | Shipped & closed — reopen welcome |
