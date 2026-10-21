@@ -477,7 +477,7 @@ _538 fixed · 101 open — regenerated automatically. FIXED names the version th
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#640](https://github.com/silkyclouds/pmda-tracker/issues/640) | It is possible to start a search for published texts without setting up any AI | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#640](https://github.com/silkyclouds/pmda-tracker/issues/640) | It is possible to start a search for published texts without setting up any AI | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1090 | Awaiting reporter confirmation |
 | [#634](https://github.com/silkyclouds/pmda-tracker/issues/634) | Likes made in PMDA are not favourites in Subsonic clients such as Music Assistant | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#632](https://github.com/silkyclouds/pmda-tracker/issues/632) | Can we get "better" fitlering in the incompletes view? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#631](https://github.com/silkyclouds/pmda-tracker/issues/631) | In a group of three folders or more, Copy A and the order of the copies follow a different ru… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
