@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_538 fixed · 101 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_538 fixed · 102 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 93 report(s), 9 open</summary>
@@ -473,11 +473,12 @@ _538 fixed · 101 open — regenerated automatically. FIXED names the version th
 </details>
 
 <details open>
-<summary><b>Other</b> — 275 report(s), 52 open</summary>
+<summary><b>Other</b> — 276 report(s), 53 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#640](https://github.com/silkyclouds/pmda-tracker/issues/640) | It is possible to start a search for published texts without setting up any AI | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1090 | Awaiting reporter confirmation |
+| [#641](https://github.com/silkyclouds/pmda-tracker/issues/641) | Manually searching for an album, often returns "untitled" from Musicbrainz, a second search t… | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#640](https://github.com/silkyclouds/pmda-tracker/issues/640) | It is possible to start a search for published texts without setting up any AI | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1091 | Awaiting reporter confirmation |
 | [#634](https://github.com/silkyclouds/pmda-tracker/issues/634) | Likes made in PMDA are not favourites in Subsonic clients such as Music Assistant | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#632](https://github.com/silkyclouds/pmda-tracker/issues/632) | Can we get "better" fitlering in the incompletes view? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#631](https://github.com/silkyclouds/pmda-tracker/issues/631) | In a group of three folders or more, Copy A and the order of the copies follow a different ru… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
