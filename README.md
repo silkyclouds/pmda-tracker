@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_538 fixed · 102 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_539 fixed · 102 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 93 report(s), 9 open</summary>
@@ -473,12 +473,12 @@ _538 fixed · 102 open — regenerated automatically. FIXED names the version th
 </details>
 
 <details open>
-<summary><b>Other</b> — 276 report(s), 53 open</summary>
+<summary><b>Other</b> — 277 report(s), 53 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#642](https://github.com/silkyclouds/pmda-tracker/issues/642) | Can we improve matching when filenames contain numbers? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#641](https://github.com/silkyclouds/pmda-tracker/issues/641) | Manually searching for an album, often returns "untitled" from Musicbrainz, a second search t… | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#640](https://github.com/silkyclouds/pmda-tracker/issues/640) | It is possible to start a search for published texts without setting up any AI | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1091 | Awaiting reporter confirmation |
 | [#634](https://github.com/silkyclouds/pmda-tracker/issues/634) | Likes made in PMDA are not favourites in Subsonic clients such as Music Assistant | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#632](https://github.com/silkyclouds/pmda-tracker/issues/632) | Can we get "better" fitlering in the incompletes view? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#631](https://github.com/silkyclouds/pmda-tracker/issues/631) | In a group of three folders or more, Copy A and the order of the copies follow a different ru… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -530,6 +530,7 @@ _538 fixed · 102 open — regenerated automatically. FIXED names the version th
 | [#189](https://github.com/silkyclouds/pmda-tracker/issues/189) | Duplicate verdicts users contest (false positives) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#188](https://github.com/silkyclouds/pmda-tracker/issues/188) | MusicBrainz mirror setup failures | github-actions | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1010 | Awaiting reporter confirmation |
 | [#187](https://github.com/silkyclouds/pmda-tracker/issues/187) | Support drops: attach your PMDA export here | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#640](https://github.com/silkyclouds/pmda-tracker/issues/640) | It is possible to start a search for published texts without setting up any AI | ovizii | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1091 | Shipped & closed — reopen welcome |
 | [#639](https://github.com/silkyclouds/pmda-tracker/issues/639) | The Opus encoding stops for hours while PMDA says it is running, and the scan fails with a mi… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1089 | Shipped & closed — reopen welcome |
 | [#638](https://github.com/silkyclouds/pmda-tracker/issues/638) | Match detail and Fix the match should be one window, and the artist match window must not fli… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1089 | Shipped & closed — reopen welcome |
 | [#637](https://github.com/silkyclouds/pmda-tracker/issues/637) | The web page should be a player other devices can see and send music to | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1087 | Shipped & closed — reopen welcome |
