@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_544 fixed · 104 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_544 fixed · 115 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 94 report(s), 9 open</summary>
@@ -434,10 +434,11 @@ _544 fixed · 104 open — regenerated automatically. FIXED names the version th
 </details>
 
 <details open>
-<summary><b>Deployment & docs</b> — 24 report(s), 2 open</summary>
+<summary><b>Deployment & docs</b> — 25 report(s), 3 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#653](https://github.com/silkyclouds/pmda-tracker/issues/653) | Refactor wave A: a newcomer can start, test and build PMDA | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#546](https://github.com/silkyclouds/pmda-tracker/issues/546) | Turn on hourly updates fails with a docker compose error when the mirror was installed by PMDA | debtdeflation | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1043 | Awaiting reporter confirmation |
 | [#33](https://github.com/silkyclouds/pmda-tracker/issues/33) | Legacy cleanup campaign: dead modes, dead vars, dead log lines, monolith factoring, security … | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#536](https://github.com/silkyclouds/pmda-tracker/issues/536) | The concert map has no world at low zoom on an image built after the pinned map build expired | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1036 | Shipped & closed — reopen welcome |
@@ -478,10 +479,20 @@ _544 fixed · 104 open — regenerated automatically. FIXED names the version th
 </details>
 
 <details open>
-<summary><b>Other</b> — 279 report(s), 55 open</summary>
+<summary><b>Other</b> — 289 report(s), 65 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#660](https://github.com/silkyclouds/pmda-tracker/issues/660) | Refactor wave H: one small entry file and one formatting pass | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#659](https://github.com/silkyclouds/pmda-tracker/issues/659) | Refactor wave G: readable engines for scan, duplicates, editions, index and export | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#658](https://github.com/silkyclouds/pmda-tracker/issues/658) | Refactor wave F: split the large files that do not move music | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#657](https://github.com/silkyclouds/pmda-tracker/issues/657) | Refactor wave E: dependencies go one way | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#656](https://github.com/silkyclouds/pmda-tracker/issues/656) | Refactor wave D: retire the runtime binding, every name has a visible owner | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#655](https://github.com/silkyclouds/pmda-tracker/issues/655) | Refactor wave C: tests stop depending on the runtime binding and on source text | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#654](https://github.com/silkyclouds/pmda-tracker/issues/654) | Refactor wave B: nothing private or noisy in the tree | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#652](https://github.com/silkyclouds/pmda-tracker/issues/652) | Refactor wave S: security review before the code opens | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#651](https://github.com/silkyclouds/pmda-tracker/issues/651) | Refactor: make PMDA readable for outside developers | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#650](https://github.com/silkyclouds/pmda-tracker/issues/650) | How to manualyl fix "No source has matched these albums yet." when I know albums are from Ban… | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#644](https://github.com/silkyclouds/pmda-tracker/issues/644) | Found a dupe in my library, not sure how/where to fix it | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#643](https://github.com/silkyclouds/pmda-tracker/issues/643) | Found dupe in library. pmda claims its in trash in deupes but that is incorrect. Searchign du… | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#642](https://github.com/silkyclouds/pmda-tracker/issues/642) | Can we improve matching when filenames contain numbers? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
