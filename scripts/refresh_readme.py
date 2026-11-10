@@ -36,7 +36,7 @@ recomputed from the rows; the prose around them is left as it is.
 The charts
 ----------
 They count reports: every issue except the engineering improvements we filed
-ourselves (titles starting with "[scanner]"), which the progress chart tallies on a
+ourselves (titles starting with "[scanner]" or "[release vNNNN]"), which the progress chart tallies on a
 line of their own.
 
     progress.svg  confirmed = closed reports, awaiting = open with needs-testing
@@ -126,7 +126,7 @@ TITLE_MAX = 96
 TITLE_CUT = 93
 
 # Engineering improvements we opened ourselves; the charts keep them out of the reports.
-ENGINEERING_TITLE = re.compile(r"^\[scanner\]")
+ENGINEERING_TITLE = re.compile(r"^\[(scanner|release[^\]]*)\]")
 
 # How the maintainer names the version that shipped a fix.
 VERSION_IN_COMMENT = re.compile(
