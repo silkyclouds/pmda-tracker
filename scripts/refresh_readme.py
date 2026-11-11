@@ -126,7 +126,7 @@ TITLE_MAX = 96
 TITLE_CUT = 93
 
 # Engineering improvements we opened ourselves; the charts keep them out of the reports.
-ENGINEERING_TITLE = re.compile(r"^\[(scanner|release[^\]]*)\]")
+ENGINEERING_TITLE = re.compile(r"^\[(scanner|release v\d+)\]")
 
 # How the maintainer names the version that shipped a fix.
 VERSION_IN_COMMENT = re.compile(
