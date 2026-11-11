@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_603 fixed · 73 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_604 fixed · 72 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 103 report(s), 7 open</summary>
@@ -140,17 +140,17 @@ _603 fixed · 73 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Scanner & pipeline</b> — 84 report(s), 7 open</summary>
+<summary><b>Scanner & pipeline</b> — 84 report(s), 6 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#677](https://github.com/silkyclouds/pmda-tracker/issues/677) | A resumed scan run can close as "still owes 1 artist / 1 album" and come back at every boot | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#661](https://github.com/silkyclouds/pmda-tracker/issues/661) | Scans are slow: coordinator write, background work and Opus mirror (after refactor) | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#574](https://github.com/silkyclouds/pmda-tracker/issues/574) | An album stuck in the Inbox says little about why, and the tags and folder names that would i… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1052 | Awaiting reporter confirmation |
 | [#512](https://github.com/silkyclouds/pmda-tracker/issues/512) | Inbox: difference between "write tags into files" and "add it without a match"? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#403](https://github.com/silkyclouds/pmda-tracker/issues/403) | Album folders whose names end in whitespace are silently dropped by the scan pipeline | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#387](https://github.com/silkyclouds/pmda-tracker/issues/387) | An index rebuild and the tag-trust materialization deadlock each other, and the rebuild loses… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1098 | Awaiting reporter confirmation |
 | [#237](https://github.com/silkyclouds/pmda-tracker/issues/237) | Folder-level numbering correction: three attempts withdrawn, and the specification for a corr… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#677](https://github.com/silkyclouds/pmda-tracker/issues/677) | A resumed scan run can close as "still owes 1 artist / 1 album" and come back at every boot | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1101 | Shipped & closed — reopen welcome |
 | [#671](https://github.com/silkyclouds/pmda-tracker/issues/671) | [release v1095] Database connections given back, busy database said plainly, anonymous scan p… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1095 | Shipped & closed — reopen welcome |
 | [#666](https://github.com/silkyclouds/pmda-tracker/issues/666) | Managed mode scans only the intake folder, and after a crash a full scan stays skipped as alr… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1100 | Shipped & closed — reopen welcome |
 | [#664](https://github.com/silkyclouds/pmda-tracker/issues/664) | On a new install an album split in two folders lists 9 albums where the upgraded install list… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1097 | Shipped & closed — reopen welcome |
