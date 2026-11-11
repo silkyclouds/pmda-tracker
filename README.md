@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_586 fixed · 89 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_590 fixed · 85 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 103 report(s), 12 open</summary>
@@ -140,14 +140,11 @@ _586 fixed · 89 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Scanner & pipeline</b> — 83 report(s), 11 open</summary>
+<summary><b>Scanner & pipeline</b> — 83 report(s), 8 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
 | [#666](https://github.com/silkyclouds/pmda-tracker/issues/666) | Managed mode scans only the intake folder, and after a crash a full scan stays skipped as alr… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#664](https://github.com/silkyclouds/pmda-tracker/issues/664) | On a new install an album split in two folders lists 9 albums where the upgraded install list… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#663](https://github.com/silkyclouds/pmda-tracker/issues/663) | Two helpers called by background rounds are defined nowhere: _any_scan_active and _path_size | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
-| [#662](https://github.com/silkyclouds/pmda-tracker/issues/662) | On a new install, pausing or stopping a scan can answer 500 | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#661](https://github.com/silkyclouds/pmda-tracker/issues/661) | Scans are slow: coordinator write, background work and Opus mirror (after refactor) | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#574](https://github.com/silkyclouds/pmda-tracker/issues/574) | An album stuck in the Inbox says little about why, and the tags and folder names that would i… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1052 | Awaiting reporter confirmation |
 | [#512](https://github.com/silkyclouds/pmda-tracker/issues/512) | Inbox: difference between "write tags into files" and "add it without a match"? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -156,6 +153,9 @@ _586 fixed · 89 open — regenerated automatically. FIXED names the version tha
 | [#381](https://github.com/silkyclouds/pmda-tracker/issues/381) | An intake root can be indexed as an album, and poisons every pass that walks the intake | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#237](https://github.com/silkyclouds/pmda-tracker/issues/237) | Folder-level numbering correction: three attempts withdrawn, and the specification for a corr… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#671](https://github.com/silkyclouds/pmda-tracker/issues/671) | [release v1095] Database connections given back, busy database said plainly, anonymous scan p… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1095 | Shipped & closed — reopen welcome |
+| [#664](https://github.com/silkyclouds/pmda-tracker/issues/664) | On a new install an album split in two folders lists 9 albums where the upgraded install list… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1097 | Shipped & closed — reopen welcome |
+| [#663](https://github.com/silkyclouds/pmda-tracker/issues/663) | Two helpers called by background rounds are defined nowhere: _any_scan_active and _path_size | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1097 | Shipped & closed — reopen welcome |
+| [#662](https://github.com/silkyclouds/pmda-tracker/issues/662) | On a new install, pausing or stopping a scan can answer 500 | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1097 | Shipped & closed — reopen welcome |
 | [#580](https://github.com/silkyclouds/pmda-tracker/issues/580) | The Inbox sentence for compilations is never printed | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1076 | Shipped & closed — reopen welcome |
 | [#556](https://github.com/silkyclouds/pmda-tracker/issues/556) | On Unraid, listing the intake folder wakes every array disk that holds an empty copy of that … | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1081 | Shipped & closed — reopen welcome |
 | [#555](https://github.com/silkyclouds/pmda-tracker/issues/555) | A scheduled changed-only scan reads again the files of an intake folder it already gave up on | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1079 | Shipped & closed — reopen welcome |
@@ -231,11 +231,10 @@ _586 fixed · 89 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Duplicates</b> — 38 report(s), 13 open</summary>
+<summary><b>Duplicates</b> — 38 report(s), 12 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#665](https://github.com/silkyclouds/pmda-tracker/issues/665) | Which of two identical duplicate copies is kept depends on the scan order | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#644](https://github.com/silkyclouds/pmda-tracker/issues/644) | Found a dupe in my library, not sure how/where to fix it | ovizii | <img src="charts/badges/badge-info.svg" alt="NEEDS INFO" height="18"/> | — | Waiting on details |
 | [#643](https://github.com/silkyclouds/pmda-tracker/issues/643) | Found dupe in library. pmda claims its in trash in deupes but that is incorrect. Searchign du… | ovizii | <img src="charts/badges/badge-info.svg" alt="NEEDS INFO" height="18"/> | — | Waiting on details |
 | [#631](https://github.com/silkyclouds/pmda-tracker/issues/631) | In a group of three folders or more, Copy A and the order of the copies follow a different ru… | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -248,6 +247,7 @@ _586 fixed · 89 open — regenerated automatically. FIXED names the version tha
 | [#379](https://github.com/silkyclouds/pmda-tracker/issues/379) | Duplicates users expected but PMDA did not report | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#239](https://github.com/silkyclouds/pmda-tracker/issues/239) | Assorted feedback on the Dupes handling interface + Album view in library | ovizii | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1014 | Awaiting reporter confirmation |
 | [#189](https://github.com/silkyclouds/pmda-tracker/issues/189) | Duplicate verdicts users contest (false positives) | github-actions | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#665](https://github.com/silkyclouds/pmda-tracker/issues/665) | Which of two identical duplicate copies is kept depends on the scan order | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1097 | Shipped & closed — reopen welcome |
 | [#566](https://github.com/silkyclouds/pmda-tracker/issues/566) | The page read to find a review could also confirm or contradict the match and the edition PMD… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1050 | Shipped & closed — reopen welcome |
 | [#558](https://github.com/silkyclouds/pmda-tracker/issues/558) | A record whose weaker tracks were asked for again is reported as left as it was, and is asked… | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1048 | Shipped & closed — reopen welcome |
 | [#534](https://github.com/silkyclouds/pmda-tracker/issues/534) | The scan and the Duplicates page choose the copy to keep by different orders | silkyclouds | <img src="charts/badges/badge-fixed.svg" alt="FIXED" height="18"/> | v1036 | Shipped & closed — reopen welcome |
