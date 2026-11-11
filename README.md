@@ -26,7 +26,7 @@ improvements we opened ourselves are tallied separately so they cannot flatter t
 <!-- issue-table:start -->
 ## Every report, one table per area
 
-_604 fixed · 72 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
+_604 fixed · 75 open — regenerated automatically. FIXED names the version that shipped it; IN BETA means the fix is on `:beta` awaiting its reporter; BACKLOG is not started._
 
 <details open>
 <summary><b>UI / UX</b> — 103 report(s), 7 open</summary>
@@ -140,11 +140,13 @@ _604 fixed · 72 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Scanner & pipeline</b> — 84 report(s), 6 open</summary>
+<summary><b>Scanner & pipeline</b> — 86 report(s), 8 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
-| [#661](https://github.com/silkyclouds/pmda-tracker/issues/661) | Scans are slow: coordinator write, background work and Opus mirror (after refactor) | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#679](https://github.com/silkyclouds/pmda-tracker/issues/679) | POST /scan/pause answered 500 once during an upgrade test | silkyclouds | <img src="charts/badges/badge-info.svg" alt="NEEDS INFO" height="18"/> | — | Waiting on details |
+| [#678](https://github.com/silkyclouds/pmda-tracker/issues/678) | Please change the way pmda deals with scans whic hstopepd before they finished | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
+| [#661](https://github.com/silkyclouds/pmda-tracker/issues/661) | Scans are slow: coordinator write, background work and Opus mirror (after refactor) | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1100 | Awaiting reporter confirmation |
 | [#574](https://github.com/silkyclouds/pmda-tracker/issues/574) | An album stuck in the Inbox says little about why, and the tags and folder names that would i… | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1052 | Awaiting reporter confirmation |
 | [#512](https://github.com/silkyclouds/pmda-tracker/issues/512) | Inbox: difference between "write tags into files" and "add it without a match"? | ovizii | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#403](https://github.com/silkyclouds/pmda-tracker/issues/403) | Album folders whose names end in whitespace are silently dropped by the scan pipeline | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
@@ -446,10 +448,11 @@ _604 fixed · 72 open — regenerated automatically. FIXED names the version tha
 </details>
 
 <details open>
-<summary><b>Settings & onboarding</b> — 47 report(s), 3 open</summary>
+<summary><b>Settings & onboarding</b> — 48 report(s), 4 open</summary>
 
 | # | Issue | Reporter | Status | Fix | Validation |
 |---|-------|----------|--------|-----|------------|
+| [#680](https://github.com/silkyclouds/pmda-tracker/issues/680) | Rolling back to v1101 after signing in on v1102 locks the account out | silkyclouds | <img src="charts/badges/badge-backlog.svg" alt="BACKLOG" height="18"/> | — | — |
 | [#581](https://github.com/silkyclouds/pmda-tracker/issues/581) | PMDA has three definitions of a configured model server and some model routes answer gone | silkyclouds | <img src="charts/badges/badge-beta.svg" alt="IN BETA" height="18"/> | v1098 | Awaiting reporter confirmation |
 | [#514](https://github.com/silkyclouds/pmda-tracker/issues/514) | Folder naming template - the pieces behave erratically | ovizii | <img src="charts/badges/badge-info.svg" alt="NEEDS INFO" height="18"/> | — | Waiting on details |
 | [#317](https://github.com/silkyclouds/pmda-tracker/issues/317) | Switching to managed mode has no path that adopts an already-organised library | silkyclouds | <img src="charts/badges/badge-info.svg" alt="NEEDS INFO" height="18"/> | — | Waiting on details |
